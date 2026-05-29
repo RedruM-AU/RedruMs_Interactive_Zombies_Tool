@@ -78,7 +78,7 @@ The bot can only connect to an active TikTok Live session. Go live on TikTok **B
 1. Open the tool from your Desktop shortcut.
 2. Go to the **Keys & Binds** tab — check your gift and spin settings match what you want.
 3. Make sure your TikTok handle is set correctly on the Dashboard (`@YourTikTokUsername` by default — change it to yours).
-4. Inside BO3, open the developer console ~ and run: /exec binds.cfg
+4. Inside BO3, open the developer console and type: `/exec binds.cfg`
 5. Start your TikTok Live stream.
 6. Click **"Launch Bot Gateway System"**.
 7. Alt-tab into BO3 and play.
