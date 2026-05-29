@@ -16,7 +16,8 @@ This tool connects your TikTok LIVE stream directly into Black Ops 3 Zombies. Ev
 * Every 5,000 likes fires a bonus spin. 
 
 It turns your TikTok stream into a fully interactive Zombies experience.
-<img width="1920" height="1040" alt="Dashboard Live" src="https://github.com/user-attachments/assets/d26ce73a-a834-4d89-b4d4-b57522745c4b" />
+
+<img width="1920" height="1040" alt="dashboard spins" src="https://github.com/user-attachments/assets/3b872b40-82af-4ae9-a307-d2470bd616a6" />
 ---
 
 ## 💡 Why I Made This
@@ -104,6 +105,9 @@ Each gift triggers a specific in-game action instantly. See the **Keys & Binds**
 ### 💬 Chat Commands
 * `!spin` → Random in-game effect (10 min cooldown / 3 min cooldown for gifters)
 * `!help` → Bot reads out how to interact with the stream
+
+<img width="218" height="656" alt="Dashboard Live" src="https://github.com/user-attachments/assets/f425f9b5-a5b4-43e4-8ed5-d415eb6e9fdd" />
+
 
 ### 🏆 Milestones
 * `1,000` / `2,500` / `5,000` / `7,500` / `10,000` likes and every `2,500` after that trigger a TTS callout.
