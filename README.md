@@ -67,6 +67,7 @@ In BO3 graphics settings, set Display Mode to: **Windowed (Borderless)**
    * Usually: `C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops III\players\`
 4. In the BO3 developer console, type: `/exec binds.cfg`
 5. Your binds are now active.
+<img width="1920" height="1040" alt="Keys   binds" src="https://github.com/user-attachments/assets/b2b46386-189a-44e6-a7c8-a9a8f69eeed8" />
 
 ### 5. Your Stream Must Be Live
 The bot can only connect to an active TikTok Live session. Go live on TikTok **BEFORE** clicking Launch Bot.
