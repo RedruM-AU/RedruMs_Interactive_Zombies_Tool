@@ -2,7 +2,7 @@
 # BO3 TikTokLIVE Interaction Tool
 
 **Version:** 1.0.1  |  **Developer:** RedruM
-
+<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/6fd607d8-ee35-4b28-8275-7ece79fde588" />
 ---
 
 ## ❓ What Is This?
