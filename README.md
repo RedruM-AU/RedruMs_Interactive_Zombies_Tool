@@ -15,7 +15,7 @@ This tool connects your TikTok LIVE stream directly into Black Ops 3 Zombies. Ev
 * Every 5,000 likes fires a bonus spin. 
 
 It turns your TikTok stream into a fully interactive Zombies experience.
-
+<img width="1920" height="1040" alt="Dashboard Live" src="https://github.com/user-attachments/assets/d26ce73a-a834-4d89-b4d4-b57522745c4b" />
 ---
 
 ## 💡 Why I Made This
