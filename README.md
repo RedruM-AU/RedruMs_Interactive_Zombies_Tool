@@ -18,6 +18,8 @@ RedruM's Interactive Zombies Tool connects your TikTok LIVE stream directly into
 
 It turns your TikTok stream into a fully interactive Zombies experience across three games.
 
+<img width="1202" height="879" alt="1  First launch 2 0 0" src="https://github.com/user-attachments/assets/250695c6-92c3-424f-8033-c2673e670f0a" />
+
 ---
 
 ## 🎮 Supported Games
@@ -113,6 +115,7 @@ What started as a personal project became a full standalone platform built from 
    - Optionally copy `bo2_tiktok_bot.gsc` directly to your Plutonium T6 scripts folder
    - Add a Windows Defender exclusion automatically
    - Create a Desktop shortcut
+<img width="598" height="464" alt="Setup Wizard 1" src="https://github.com/user-attachments/assets/8f833b34-81fe-4d39-bc5c-da41c58f14cf" />
 
 ### Portable
 1. Download `RedruMs_Interactive_Zombies_Tool_Portable.zip` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
@@ -178,6 +181,7 @@ You must be the **host** of the Custom Game lobby for the GSC script to run.
 
 ### 5. Set Borderless Windowed and Go Live
 Same as BO3 — Windowed (Borderless) required. Stream must be active before Launch Bot.
+<img width="1920" height="1040" alt="4 2 Setup   diagnostics Tab 2 0 0" src="https://github.com/user-attachments/assets/c0681767-adad-4c14-a0aa-738d5b573ce0" />
 
 ---
 
@@ -234,6 +238,7 @@ All diagnostic tools are in the **Setup & Diagnostics** tab:
 - **Spin Wheel** — add, remove, edit effects. Set name, key binding, and weight (rarity). Enable/disable individual effects.
 - **Gift Matrix** — map any TikTok gift to any key and action type. Live receive counter per gift.
 - **Reset to Defaults** — restores the current game's default configuration
+<img width="1920" height="1040" alt="3  Binds Tab 2 0 0" src="https://github.com/user-attachments/assets/9d92bb64-2cdf-4ce7-9289-2f432bfc3110" />
 
 ### Dashboard
 - **Preset Profiles** — save your full configuration under a name and reload it any time
@@ -244,6 +249,7 @@ All diagnostic tools are in the **Setup & Diagnostics** tab:
 ```
 %APPDATA%\BO3TikTokBot\config.json
 ```
+<img width="1920" height="1040" alt="2  Dashboard 2 0 0" src="https://github.com/user-attachments/assets/c36993f6-957c-4832-82e7-84342d1bc973" />
 
 ---
 
