@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.0.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.1.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 ---
 
@@ -15,7 +15,7 @@ RedruM's Interactive Zombies Tool connects your TikTok LIVE stream directly into
 
 It turns your TikTok stream into a fully interactive Zombies experience across three games.
 
-<img width="1202" height="922" alt="1  First launch 2 0 0" src="https://github.com/user-attachments/assets/875a63da-e5a5-4304-80c4-ca8c02c60dc9" />
+<img width="1202" height="922" alt="1  First launch 2 1 0" src="https://github.com/user-attachments/assets/50695162-73b8-4b30-9f7f-347344968815" />
 
 ---
 
@@ -135,7 +135,7 @@ What started as a personal project became a full standalone platform built from 
 ## 📦 Installation
 
 ### Setup Wizard (Recommended)
-1. Download `RedruMs Interactive Zombies Tool v2.0.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
+1. Download `RedruMs Interactive Zombies Tool v2.1.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
    - Collect your BO3 directory, Plutonium GSC folder, and Plutonium config folder
@@ -145,7 +145,7 @@ What started as a personal project became a full standalone platform built from 
    - Add a Windows Defender exclusion automatically
    - Create a Desktop shortcut
 
-<img width="598" height="464" alt="Setup Wizard 1" src="https://github.com/user-attachments/assets/a9991077-c332-422b-9ce2-4dd4927076c1" />
+<img width="598" height="464" alt="Setup Wizard 2 1 0" src="https://github.com/user-attachments/assets/462daf90-3ba2-4932-990d-5afc18672833" />
 
 ### Portable
 1. Download `RedruMs_Interactive_Zombies_Tool_Portable.zip` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
@@ -178,6 +178,8 @@ If you set your BO3 path during install, the app writes binds.cfg automatically 
 
 ### 5. Go Live First
 Your TikTok stream **must be active** before clicking Launch Bot.
+
+<img width="1920" height="1040" alt="4  Setup   diagnostics Tab2 1 0" src="https://github.com/user-attachments/assets/3c1be050-bfcd-40ae-af17-b8e531b3f359" />
 
 ---
 
@@ -212,8 +214,6 @@ You must be the **host** of the Custom Game lobby for the GSC script to run.
 ### 5. Set Borderless Windowed and Go Live
 Set your game to Windowed (Borderless). Stream must be active before Launch Bot.
 
-<img width="1920" height="1040" alt="4  Setup   diagnostics Tab 2 0 0" src="https://github.com/user-attachments/assets/fede085f-1db9-4ef3-bdbe-b632a21a3161" />
-
 ---
 
 ## 🎯 How Keys & Binds Works
@@ -226,7 +226,7 @@ The Keys & Binds tab has three panels that work together:
 
 **Gift Routing Matrix (right)** — map TikTok gifts to actions by name. For Direct Key Bind gifts, pick the action from a dropdown — the key resolves automatically. No manual key entry needed.
 
-<img width="1920" height="1040" alt="3  Binds Tab 2 0 0" src="https://github.com/user-attachments/assets/7a542536-aeef-4304-9aca-e216ee647f69" />
+<img width="1920" height="1040" alt="3  Binds Tab 2 1 0" src="https://github.com/user-attachments/assets/f9ccf539-f9a7-4d51-a692-c13049f46927" />
 
 ---
 
@@ -381,4 +381,4 @@ Built entirely by **RedruM** from scratch while learning to program.
 
 ---
 
-*Created by RedruM &nbsp;|&nbsp; Last Updated: June 2026 &nbsp;|&nbsp; v2.0.0*
+*Created by RedruM &nbsp;|&nbsp; Last Updated: June 2026 &nbsp;|&nbsp; v2.1.0*
