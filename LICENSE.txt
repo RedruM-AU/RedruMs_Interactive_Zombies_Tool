@@ -1,46 +1,75 @@
-BO3 TikTokLIVE Interaction Tool
+RedruM's Interactive Zombies Tool
 Copyright © 2026 RedruM (@redrum.au)
-Version 1.0.1
+Version 2.2.0
 =========================================================
 LICENSE AGREEMENT & TERMS OF USE
 =========================================================
-This software is provided for **personal and streaming use only**.
+This software is provided for personal and streaming use only.
 
 PERMITTED USE:
-• You may download and use this tool for your own TikTok LIVE streams.
-• You may create a private modified copy for your personal use only.
+  - You may download and use this tool for your own TikTok LIVE streams.
+  - You may create a private modified copy for your personal use only.
 
 RESTRICTIONS:
-• You are NOT permitted to redistribute, share, or re-upload this software.
-• You are NOT permitted to rebrand, rename, or claim ownership of this tool.
-• You are NOT permitted to sell, monetize, or commercially distribute this software.
-• You are NOT permitted to modify and publicly release any version of this tool.
-• You are NOT permitted to use this tool for any malicious, harmful, or illegal purpose.
+  - You are NOT permitted to redistribute, share, or re-upload this software.
+  - You are NOT permitted to rebrand, rename, or claim ownership of this tool.
+  - You are NOT permitted to sell, monetize, or commercially distribute this software.
+  - You are NOT permitted to modify and publicly release any version of this tool.
+  - You are NOT permitted to use this tool for any malicious, harmful, or illegal purpose.
 
-Source code is not publicly distributed and remains the exclusive property of the author.
+Source code is not publicly distributed and remains the exclusive
+property of the author.
+
+THIS TOOL IS FREE. IF YOU PAID FOR IT, YOU WERE SCAMMED.
+Report scammers via TikTok DM: @redrum.au
+=========================================================
+SUPPORTED GAMES
+=========================================================
+  - Black Ops 3 Zombies (Steam)
+  - Black Ops 2 Zombies (Plutonium T6)
+  - Black Ops 1 Zombies (Plutonium T5)
+
+This tool connects your TikTok LIVE stream to your game.
+Viewers can interact in real time via likes, gifts, and
+chat commands — all routed through the in-game keybind system.
 =========================================================
 ANTIVIRUS FALSE POSITIVE NOTICE
 =========================================================
 This program may trigger antivirus warnings (Windows Defender, etc.).
 
-This is a false positive. The tool was built in Python using PyInstaller.
-It only reads public TikTok LIVE data and sends keyboard commands to Black Ops 3.
+This is a false positive. The tool was built in Python using
+PyInstaller. It only reads public TikTok LIVE data and sends
+keyboard input to Call of Duty games.
 
-The installer automatically adds a Windows Defender exclusion for the program folder.
+The installer automatically adds a Windows Defender exclusion
+for the program folder.
 =========================================================
 DISCLAIMER
 =========================================================
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
 ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF
 THIS SOFTWARE.
-=========================================================
-CONTACT
-=========================================================
-TikTok: @redrum.au
 
-For support or bug reports, please contact me directly on TikTok.
+Use of this tool is at your own risk. The author is not
+responsible for any bans, suspensions, or issues arising
+from use with third-party games or platforms.
+=========================================================
+CONTACT & OFFICIAL DISTRIBUTION
+=========================================================
+TikTok:   @redrum.au
+          tiktok.com/@redrum.au
+
+GitHub:   github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool
+
+Releases: github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases
+
+This is the only official distribution source for this tool.
+Do not download from any other source.
+
+For support or bug reports, copy the session log from the
+Debug panel in the app and send it via TikTok DM,
+or open a GitHub Issue.
 
 Thank you for using the tool. Let's make some chaos in Zombies.
 
