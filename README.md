@@ -214,7 +214,15 @@ If you set your Plutonium config path during install, the app writes the cfg aut
 You must be the **host** of the Custom Game lobby for the GSC script to run.
 
 ### 5. Set Borderless Windowed and Go Live
-Set your game to Windowed (Borderless). Stream must be active before Launch Bot.
+
+Unlike BO3, Plutonium does not have a native borderless windowed option. You need to use **Borderless Gaming** to force the game into borderless windowed mode so the bot's keypresses reach the window correctly.
+
+**[Borderless Gaming →](https://github.com/andrewmd5/Borderless-Gaming/releases)**
+
+1. Launch your Plutonium game in **Windowed** mode
+2. Open Borderless Gaming — your game will appear in the list
+3. Double-click it to make it borderless
+4. Start your TikTok Live, then click **Launch Bot**
 
 ---
 
@@ -304,6 +312,7 @@ The installer adds a Windows Defender exclusion automatically.
 - Make sure you are the HOST of the lobby
 - Confirm the GSC file is in the correct folder
 - After placing the GSC, run `map_restart` in console
+- Make sure Plutonium is running in Windowed mode with **[Borderless Gaming](https://github.com/andrewmd5/Borderless-Gaming/releases)** active — fullscreen blocks keypresses
 
 </details>
 
