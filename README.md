@@ -91,7 +91,7 @@ The app detects which game is running automatically and switches to the correct 
 ### Plutonium GSC Integration (T6 / T5)
 - Silent say-bridge — bot presses key → GSC catches `say !botcmd_X` silently, no chat spam
 - **T6:** 20+ in-game actions — powerups, perks, points, weapons, timescale, PAP upgrade/downgrade, low gravity, aimbot timer, wheel spin
-- **T5:** 21 in-game actions — full wheel spin with slot machine animation, God Mode, Teleport, PAP, perks, weapons, low gravity, bonus health
+- **T5:** 22 in-game actions — full wheel spin with slot machine animation, God Mode, Teleport, PAP, perks, weapons, low gravity, bonus health
 - 37-weapon random weapon deck (Fisher-Yates shuffle — all 37 before any repeat)
 - In-game wheel spin — slot machine displayed on screen, lands and fires
 - All in-game text displays in red
