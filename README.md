@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.1.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.2.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 ---
 
@@ -25,7 +25,7 @@ It turns your TikTok stream into a fully interactive Zombies experience across t
 |------|----------|--------|
 | Black Ops 3 Zombies | Steam | ✅ Full Support |
 | Black Ops 2 Zombies | Plutonium (T6) | ✅ Full Support |
-| Black Ops 1 Zombies | Plutonium (T5) | ✅ Supported |
+| Black Ops 1 Zombies | Plutonium (T5) | ✅ Full Support |
 
 The app detects which game is running automatically and switches to the correct profile. Each game has its own independent configuration — spin effects, gift binds, and weights are stored separately and restored when you switch back.
 
@@ -43,7 +43,7 @@ The app detects which game is running automatically and switches to the correct 
 - System tray support — minimise to tray, restore or terminate from icon
 
 ### Keys & Binds — Action Bind Architecture
-- **Action Binds panel** — single source of truth for every keybind
+- **Action Binds panel** — single source of truth for every keybind, grouped by category
 - Change a key once in Action Binds — spin wheel, gift matrix, and cfg export all update automatically
 - No more sync issues between gifts and spin effects
 - **Wheel Spin Pool** — select which actions appear on the wheel and set rarity weights
@@ -53,17 +53,18 @@ The app detects which game is running automatically and switches to the correct 
 
 ### Interaction
 - Weighted spin wheel with anti-repeat buffer
-- Six gift action types: Direct Key Bind, Wheel Spin, 3rd Person 15s, Random Timescale, Powerup Rain, Random Powerup
+- BO3 gift action types: Direct Key Bind, Wheel Spin, 3rd Person 15s, Random Timescale, Powerup Rain, Random Powerup
+- T5/T6 gift action types: Direct Key Bind, Wheel Spin
 - Gift stacking (up to 10x) with stack-specific TTS
 - Per-user spin cooldowns — adjustable gifter and viewer cooldowns (default 3 min / 10 min)
 - Live gifter tracking — gifters get priority cooldown and chat readout
-- Like milestones: 1K, 2.5K, 5K, 7.5K, 10K and every 2.5K after
+- Like milestones: 1K, 2.5K, 5K, 7.5K, 10K and every 2.5K after — up to 25K with dedicated callouts
 - +1,000 points every 1,000 likes automatically
 
 ### TTS
 - Offline TTS via pyttsx3 — no internet required
 - Action-based TTS — callout matches what actually happens in game, not just the gift name
-- Per-effect rich TTS pools — 30+ specific effect callouts (e.g. "Rose from RedruM — Insta Kill!")
+- Per-effect rich TTS pools — 43+ specific effect callouts (e.g. "Rose from RedruM — Insta Kill!")
 - Automatic effect name lookup from action binds — remapping updates TTS automatically
 - Volume slider and instant mute toggle
 - Separate Follow TTS and Gifter Chat TTS toggles
@@ -75,30 +76,30 @@ The app detects which game is running automatically and switches to the correct 
 - Per-game gift matrix — gift name, action dropdown, type combo, live receive counter
 - Named preset profiles — save and load complete configurations by name
 - Auto-save on launch and terminate
-- Auto-write binds files on save — silently updates binds.cfg / bot_binds.cfg to known paths
+- Auto-write binds files on save — silently updates cfg files to known paths
 - Paths remembered from installer wizard — no manual file management needed
 - JSON config at `%APPDATA%\BO3TikTokBot\config.json`
-- Backward compatible with v1.0.1 config files
 - New profile actions merge automatically on version update
 
 ### BO3 Binds Export
 - Fully dynamic — reads keys from Action Binds panel, commands from profile
 - Change any key and re-save — exported cfg reflects it immediately
 - No hardcoded sections — every bind line is generated from your live configuration
-- 31 actions including points, powerups, weapons, perks, ammo, timescale, 3rd person, round skip, aimbot timer
+- 34 actions including points, powerups, weapons, perks, ammo, chaos effects, round controls, and new God Mode Timer and PAP Upgrade
+- All Sphynx commands verified against the official command list
 
-### Plutonium GSC Integration (T6/T5)
+### Plutonium GSC Integration (T6 / T5)
 - Silent say-bridge — bot presses key → GSC catches `say !botcmd_X` silently, no chat spam
-- 20+ in-game actions for T6: powerups, perks, points, weapons, timescale, 3rd person, PAP upgrade/downgrade, wheel spin, map restart
+- **T6:** 20+ in-game actions — powerups, perks, points, weapons, timescale, PAP upgrade/downgrade, low gravity, aimbot timer, wheel spin
+- **T5:** 21 in-game actions — full wheel spin with slot machine animation, God Mode, Teleport, PAP, perks, weapons, low gravity, bonus health
 - 37-weapon random weapon deck (Fisher-Yates shuffle — all 37 before any repeat)
-- In-game wheel spin — 19-action slot machine displayed on screen, lands and fires
+- In-game wheel spin — slot machine displayed on screen, lands and fires
 - All in-game text displays in red
 
 ### Setup & Export
 - Export Binds .cfg (BO3) — dynamically generated from current Action Binds
-- Export Binds .cfg (Plutonium) — one `exec bot_binds.cfg` loads all binds permanently
+- Export Binds .cfg (Plutonium) — one `exec` command loads all binds permanently
 - Auto-write on save — silently writes cfg files to installer-configured paths
-- Exec reminder shown every time Plutonium cfg is auto-written
 - Export GSC (T6/T5) — confirmed working scripts exported directly from the app
 - Open GSC Folder — opens correct Plutonium folder in Explorer, creates it if missing
 - Smart drive scan — finds BO3 or Plutonium installation automatically
@@ -108,7 +109,6 @@ The app detects which game is running automatically and switches to the correct 
 - Config fully preserved across updates — keys, weights, gifts all intact
 - New actions added to profiles merge automatically without resetting customisations
 - Installer uses `onlyifdoesntexist` for GSC and binds files — never overwrites user edits
-- Installer finish page shows different message for new vs returning users
 
 ### Diagnostics
 - Keypress emulator — 3-second countdown then fires a test key to verify permissions
@@ -135,12 +135,12 @@ What started as a personal project became a full standalone platform built from 
 ## 📦 Installation
 
 ### Setup Wizard (Recommended)
-1. Download `RedruMs Interactive Zombies Tool v2.1.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
+1. Download `RedruMs Interactive Zombies Tool v2.2.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
-   - Collect your BO3 directory, Plutonium GSC folder, and Plutonium config folder
+   - Collect your BO3 directory, Plutonium GSC folder, Plutonium T6 config folder, and Plutonium T5 players folder
    - Optionally copy `binds.cfg` to your BO3 players folder
-   - Optionally copy `bo2_tiktok_bot.gsc` to your Plutonium T6 scripts folder
+   - Optionally copy `bo2_tiktok_bot.gsc` to your T6 scripts folder and `bo1_tiktok_bot.gsc` to your T5 scripts folder
    - Save paths so the app can auto-write binds files on every save
    - Add a Windows Defender exclusion automatically
    - Create a Desktop shortcut
@@ -197,16 +197,18 @@ Download from [plutonium.pw](https://plutonium.pw) and set up your game.
 | Game | Folder |
 |------|--------|
 | BO2 (T6) | `%localappdata%\Plutonium\storage\t6\raw\scripts\zm` |
-| BO1 (T5) | `%localappdata%\Plutonium\storage\t5\scripts\sp` |
+| BO1 (T5) | `%localappdata%\Plutonium\storage\t5\raw\scripts\sp` |
 
 Click **Open GSC Folder** to go straight there. The installer can do this automatically.
 
 ### 3. Load Keybinds
 1. Click **Export Binds .cfg (Plutonium)**
-2. Copy `bot_binds.cfg` to your Plutonium config folder (`\storage\t6\players`)
-3. In-game console: `exec bot_binds.cfg`
+2. Copy the cfg to your Plutonium players folder
+3. In-game console:
+   - T6: `exec bot_binds.cfg`
+   - T5: `exec pluto_t5_binds.cfg`
 
-If you set your Plutonium config path during install, the app writes `bot_binds.cfg` automatically on every save — a reminder will prompt you to run `exec bot_binds.cfg` to reload.
+If you set your Plutonium config path during install, the app writes the cfg automatically on every save — a reminder will prompt you to re-run the exec command to reload.
 
 ### 4. Start as Host
 You must be the **host** of the Custom Game lobby for the GSC script to run.
@@ -220,11 +222,11 @@ Set your game to Windowed (Borderless). Stream must be active before Launch Bot.
 
 The Keys & Binds tab has three panels that work together:
 
-**Action Binds (left)** — the single source of truth. One row per action, one key per action. Change a key here and everything updates automatically — spin wheel, gift matrix, and cfg export all reflect the change instantly on next save.
+**Action Binds (left)** — the single source of truth. One row per action, one key per action, grouped by category. Change a key here and everything updates automatically — spin wheel, gift matrix, and cfg export all reflect the change instantly on next save.
 
 **Wheel Spin Pool (middle)** — select which actions appear on the wheel and how rare they are. No key column — keys resolve from Action Binds automatically.
 
-**Gift Routing Matrix (right)** — map TikTok gifts to actions by name. For Direct Key Bind gifts, pick the action from a dropdown — the key resolves automatically. No manual key entry needed.
+**Gift Routing Matrix (right)** — map TikTok gifts to actions by name. For Direct Key Bind gifts, pick the action from a dropdown — the key resolves automatically. BO3 also supports gift types for timed effects.
 
 <img width="1920" height="1040" alt="3  Binds Tab 2 1 0" src="https://github.com/user-attachments/assets/f9ccf539-f9a7-4d51-a692-c13049f46927" />
 
@@ -238,17 +240,17 @@ The Keys & Binds tab has three panels that work together:
 | Every 1,000 likes | +1,000 points in game |
 | Every 5,000 likes | Bonus random spin effect |
 | 1K / 2.5K / 5K / 7.5K / 10K | TTS milestone callout |
-| Every 2,500 after 10K | Continued TTS milestones |
+| Every 2,500 after 10K | Continued TTS milestones up to 25K |
 
 ### 🎁 Gifts
 | Action Type | What It Does |
 |-------------|-------------|
 | Direct Key Bind Only | Fires the assigned action's key once |
 | Wheel Spin | Triggers a random weighted spin |
-| 3rd Person 15s | Switches camera for 15 seconds |
-| Random Timescale | Fast or slow timescale for 20 seconds |
-| Powerup Rain | Fires powerup key 10 times over 20 seconds |
-| Random Powerup | Drops one random powerup |
+| 3rd Person 15s | Switches camera for 15 seconds *(BO3 only)* |
+| Random Timescale | Fast or slow timescale for 20 seconds *(BO3 only)* |
+| Powerup Rain | Fires powerup all 10 times over 7.5 seconds *(BO3 only)* |
+| Random Powerup | Drops one random powerup *(BO3 only)* |
 
 Gifters receive faster `!spin` cooldown (3 min vs 10 min) and chat messages read aloud.
 
@@ -298,7 +300,7 @@ The installer adds a Windows Defender exclusion automatically.
 <details>
 <summary><b>Nothing happening in Plutonium</b></summary>
 
-- Make sure you ran `exec bot_binds.cfg` in console
+- Make sure you ran `exec bot_binds.cfg` (T6) or `exec pluto_t5_binds.cfg` (T5) in console
 - Make sure you are the HOST of the lobby
 - Confirm the GSC file is in the correct folder
 - After placing the GSC, run `map_restart` in console
@@ -311,7 +313,7 @@ The installer adds a Windows Defender exclusion automatically.
 - Change your key in the Action Binds panel (left column of Keys & Binds tab)
 - Click Save Configuration — the cfg file is rewritten automatically
 - For BO3: re-run `/exec binds.cfg` in console
-- For Plutonium: re-run `exec bot_binds.cfg` in console (prompted automatically)
+- For Plutonium: re-run the exec command in console (prompted automatically)
 
 </details>
 
@@ -361,9 +363,9 @@ AppData config is cleaned up automatically. `binds.cfg` in BO3 and GSC files in 
 | TikTok | [@redrum.au](https://tiktok.com/@redrum.au) |
 | GitHub | [RedruMs_Interactive_Zombies_Tool](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool) |
 | Releases | [Latest Release](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) |
-| Previous | [v1.0.1](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/tag/1.0.1) |
+| Previous | [v2.1.1](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/tag/2.1.1) |
 
-For bug reports, copy the session log from the **Administrative Debug Utilities** panel and send via TikTok DM.
+For bug reports, copy the session log from the **Setup & Diagnostics** panel and send via TikTok DM.
 
 ---
 
@@ -378,7 +380,3 @@ Built entirely by **RedruM** from scratch while learning to program.
 - [pystray](https://github.com/moses-palmer/pystray) — system tray integration
 - [psutil](https://github.com/giampaolo/psutil) — process enumeration for auto game detection
 - [pygetwindow](https://github.com/asweigart/PyGetWindow) — game window focus
-
----
-
-*Created by RedruM &nbsp;|&nbsp; Last Updated: June 2026 &nbsp;|&nbsp; v2.1.0*
