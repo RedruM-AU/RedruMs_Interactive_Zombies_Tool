@@ -152,6 +152,8 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
+<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/ae5f48dc-195a-4505-9847-c073c11ae7b2" />
+
 ### 1. Install the Required Mod
 You **must** have this mod installed and active for any keybinds to work:
 
@@ -174,8 +176,6 @@ If you set your BO3 path during install, the app writes binds.cfg automatically 
 
 ### 5. Go Live First
 Your TikTok stream **must be active** before clicking Launch Bot.
-
-<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/ae5f48dc-195a-4505-9847-c073c11ae7b2" />
 
 ---
 
@@ -224,6 +224,8 @@ Unlike BO3, Plutonium does not have a native borderless windowed option. You nee
 
 ## 🎯 How Keys & Binds Works
 
+<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/adfe4ad5-6e16-4ba7-8ec8-a09310f66ab4" />
+
 The Keys & Binds tab has three panels that work together:
 
 **Action Binds (left)** — the single source of truth. One row per action, one key per action, grouped by category. Change a key here and everything updates automatically — spin wheel, gift matrix, and cfg export all reflect the change instantly on next save.
@@ -231,8 +233,6 @@ The Keys & Binds tab has three panels that work together:
 **Wheel Spin Pool (middle)** — select which actions appear on the wheel and how rare they are. No key column — keys resolve from Action Binds automatically.
 
 **Gift Routing Matrix (right)** — map TikTok gifts to actions by name. For Direct Key Bind gifts, pick the action from a dropdown — the key resolves automatically. BO3 also supports gift types for timed effects.
-
-<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/adfe4ad5-6e16-4ba7-8ec8-a09310f66ab4" />
 
 ---
 
