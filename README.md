@@ -134,7 +134,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 📦 Installation
 
-### Setup Wizard (Recommended)
+### Setup Wizard
 1. Download `RedruMs Interactive Zombies Tool v2.2.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
@@ -144,13 +144,6 @@ What started as a personal project became a full standalone platform built from 
    - Save paths so the app can auto-write binds files on every save
    - Add a Windows Defender exclusion automatically
    - Create a Desktop shortcut
-
-<img width="598" height="464" alt="Setup Wizard 2 1 0" src="https://github.com/user-attachments/assets/462daf90-3ba2-4932-990d-5afc18672833" />
-
-### Portable
-1. Download `RedruMs_Interactive_Zombies_Tool_Portable.zip` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
-2. Extract anywhere
-3. Run `RedruMs_Interactive_Zombies_Tool.exe`
 
 ---
 
