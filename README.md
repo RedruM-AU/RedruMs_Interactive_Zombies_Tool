@@ -15,7 +15,7 @@ RedruM's Interactive Zombies Tool connects your TikTok LIVE stream directly into
 
 It turns your TikTok stream into a fully interactive Zombies experience across three games.
 
-<img width="1202" height="922" alt="1  First launch 2 1 0" src="https://github.com/user-attachments/assets/50695162-73b8-4b30-9f7f-347344968815" />
+<img width="1202" height="922" alt="First launch" src="https://github.com/user-attachments/assets/9f83a264-230e-4ff4-91a3-f2a6358f2daf" />
 
 ---
 
@@ -134,7 +134,10 @@ What started as a personal project became a full standalone platform built from 
 
 ## 📦 Installation
 
+<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/4e3daa3f-4a0a-492e-820f-63765782a07d" />
+
 ### Setup Wizard
+
 1. Download `RedruMs Interactive Zombies Tool v2.2.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
@@ -172,7 +175,7 @@ If you set your BO3 path during install, the app writes binds.cfg automatically 
 ### 5. Go Live First
 Your TikTok stream **must be active** before clicking Launch Bot.
 
-<img width="1920" height="1040" alt="4  Setup   diagnostics Tab2 1 0" src="https://github.com/user-attachments/assets/3c1be050-bfcd-40ae-af17-b8e531b3f359" />
+<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/ae5f48dc-195a-4505-9847-c073c11ae7b2" />
 
 ---
 
@@ -229,7 +232,7 @@ The Keys & Binds tab has three panels that work together:
 
 **Gift Routing Matrix (right)** — map TikTok gifts to actions by name. For Direct Key Bind gifts, pick the action from a dropdown — the key resolves automatically. BO3 also supports gift types for timed effects.
 
-<img width="1920" height="1040" alt="3  Binds Tab 2 1 0" src="https://github.com/user-attachments/assets/f9ccf539-f9a7-4d51-a692-c13049f46927" />
+<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/adfe4ad5-6e16-4ba7-8ec8-a09310f66ab4" />
 
 ---
 
