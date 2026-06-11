@@ -134,7 +134,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 📦 Installation
 
-<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/4e3daa3f-4a0a-492e-820f-63765782a07d" />
+<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/fbacf029-625c-4191-a346-c0e0e6278b1f" />
 
 ### Setup Wizard
 
@@ -152,7 +152,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
-<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/ae5f48dc-195a-4505-9847-c073c11ae7b2" />
+<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/fb45cd96-7308-4324-966d-27f96c8e4b9b" />
 
 ### 1. Install the Required Mod
 You **must** have this mod installed and active for any keybinds to work:
@@ -224,7 +224,7 @@ Unlike BO3, Plutonium does not have a native borderless windowed option. You nee
 
 ## 🎯 How Keys & Binds Works
 
-<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/adfe4ad5-6e16-4ba7-8ec8-a09310f66ab4" />
+<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/f5f47ad6-02f7-4410-a773-0d923397dc99" />
 
 The Keys & Binds tab has three panels that work together:
 
