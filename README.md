@@ -115,16 +115,6 @@ The app detects which game is running automatically and switches to the correct 
 - In-game wheel spin — slot machine displayed on screen, lands and fires
 - All in-game text displays in red
 
-### T6 Interactive Events
-| Action | Key | Description |
-|--------|-----|-------------|
-| Red Light Green Light | p | 30s event — movement during red light removes 30% health |
-| Teleport Random | n | Teleports to a random interior position using the AI nav graph |
-| Spawn Zombies | k | Adds 5 zombies to the current wave |
-| Freeze Controls | j | Disables player controls for 3 seconds |
-| Drunk Mode | t | Screen blur + random timescale cycling for 10 seconds |
-| Remove All Points | y | Strips all player points instantly |
-
 ### Setup & Export
 - Export Binds .cfg (BO3) — dynamically generated from current Action Binds
 - Export Binds .cfg (Plutonium) — correct filename per game (bot_binds.cfg / pluto_t5_binds.cfg)
