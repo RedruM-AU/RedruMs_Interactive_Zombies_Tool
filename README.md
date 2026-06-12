@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.2.1 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.2.2 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 ---
 
@@ -35,11 +35,12 @@ The app detects which game is running automatically and switches to the correct 
 
 ### Core
 - Real-time TikTok LIVE integration (likes, gifts, follows, comments)
+- Live viewer counter — updates in real time from TikTok's viewer count event
 - Priority keypress queue with overflow protection
 - Auto game detection via process scanning every 5 seconds
 - Per-game profile system with instant switching
 - Per-game configuration persistence — customisations saved independently per game
-- Auto-reconnect on TikTok API drops with reconnect counter
+- Auto-reconnect on TikTok API drops with reconnect counter and TTS alert
 - System tray support — minimise to tray, restore or terminate from icon
 
 ### Keys & Binds — Action Bind Architecture
@@ -68,13 +69,21 @@ The app detects which game is running automatically and switches to the correct 
 - Action-based TTS — callout matches what actually happens in game, not just the gift name
 - Per-effect rich TTS pools — 43+ specific effect callouts (e.g. "Rose from RedruM — Insta Kill!")
 - Automatic effect name lookup from action binds — remapping updates TTS automatically
-- Volume slider and instant mute toggle
+- Volume slider and speed slider with instant mute toggle
 - Individual toggles: Gifter Chat TTS, Gift Action TTS, Spin Results TTS
 - Live audio gauge visualiser
+- TTS alert on reconnect — announces when the bot drops and reconnects
+
+### Dashboard
+- Live viewer count display — updates in real time
+- Live chat feed — last 50 messages, auto-trims oldest
+- Spin history — last 5 spins with username and effect name
+- Stats row — follows, gifts, spins, viewers for the current session
+- Session summary popup on terminate — duration, likes, gifts, top gift, total spins, most common spin, follows, reconnects
 
 ### Dashboard Toggles
-- **Likes / Gifts / Follows / Comments** — enable or disable each event type independently
-- **!spin** — allow or block the chat spin command without disabling comment processing
+- **Likes / Gifts / Follows** — enable or disable each event type independently
+- **!spin** — allow or block the chat spin command
 - **Gift TTS** — mute gift action announcements without affecting other TTS
 - **Spin TTS** — mute spin result announcements (chat, gift, and bonus spins)
 - **Bonus Spin** — disable automatic bonus spins from like milestones while keeping points active
@@ -100,11 +109,21 @@ The app detects which game is running automatically and switches to the correct 
 
 ### Plutonium GSC Integration (T6 / T5)
 - Silent say-bridge — bot presses key → GSC catches `say !botcmd_X` silently
-- **T6:** 25 in-game actions — powerups, perks, points, weapons, timescale, PAP upgrade/downgrade, low gravity, aimbot timer, wheel spin
+- **T6:** 31 in-game actions — powerups, perks, points, weapons, timescale, PAP upgrade/downgrade, low gravity, aimbot timer, wheel spin, and interactive events
 - **T5:** 23 in-game actions — full wheel spin with slot machine animation, God Mode, Teleport, PAP, perks, weapons, low gravity, bonus health
 - 37-weapon random weapon deck (Fisher-Yates shuffle — all 37 before any repeat)
 - In-game wheel spin — slot machine displayed on screen, lands and fires
 - All in-game text displays in red
+
+### T6 Interactive Events
+| Action | Key | Description |
+|--------|-----|-------------|
+| Red Light Green Light | p | 30s event — movement during red light removes 30% health |
+| Teleport Random | n | Teleports to a random interior position using the AI nav graph |
+| Spawn Zombies | k | Adds 5 zombies to the current wave |
+| Freeze Controls | j | Disables player controls for 3 seconds |
+| Drunk Mode | t | Screen blur + random timescale cycling for 10 seconds |
+| Remove All Points | y | Strips all player points instantly |
 
 ### Setup & Export
 - Export Binds .cfg (BO3) — dynamically generated from current Action Binds
@@ -149,7 +168,7 @@ What started as a personal project became a full standalone platform built from 
 
 ### Setup Wizard
 
-1. Download `RedruMs Interactive Zombies Tool v2.2.1 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
+1. Download `RedruMs Interactive Zombies Tool v2.2.2 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
    - Collect your BO3 directory, Plutonium GSC folder, Plutonium T6 config folder, and Plutonium T5 players folder
@@ -387,7 +406,7 @@ AppData config is cleaned up automatically. `binds.cfg` in BO3 and GSC files in 
 | TikTok | [@redrum.au](https://tiktok.com/@redrum.au) |
 | GitHub | [RedruMs_Interactive_Zombies_Tool](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool) |
 | Releases | [Latest Release](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) |
-| Previous | [v2.2.0](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/tag/v2.2.0) |
+| Previous | [v2.2.1](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/tag/2.2.1) |
 
 For bug reports, copy the session log from the **Setup & Diagnostics** panel and send via TikTok DM.
 
