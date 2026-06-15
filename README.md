@@ -120,17 +120,6 @@ The application auto-detects active games and maintains separate configurations 
 - In-game wheel spin with slot machine animation
 - All in-game text displayed in red
 
-### T6 Interactive Events
-
-| Action | Key | Description |
-|--------|-----|-------------|
-| Red Light Green Light | p | 30s event — movement during red light removes 30% health |
-| Spawn Zombies | k | Adds 5 zombies to the current wave |
-| Freeze Controls | j | Disables player controls for 3 seconds |
-| Drunk Mode | t | Screen blur + random timescale for 10 seconds |
-| Remove All Points | y | Strips all player points instantly |
-| Give Wonder Weapon | End | Map-aware wonder weapon with anti-repeat logic |
-| Spawn Boss | F3 | Map-aware boss spawn — Avogadro / Brutus / Panzer |
 
 ### Setup & Export
 - Export Binds .cfg (BO3) — dynamically generated from current Action Binds
@@ -186,7 +175,8 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
-<img width="1920" height="1040" alt="Setup & Diagnostics" src="https://github.com/user-attachments/assets/fb45cd96-7308-4324-966d-27f96c8e4b9b" />
+<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/9faceded-da46-4dc7-a830-c41baa51d8d4" />
+
 
 1. **Install the required mod**
    **[ZM] Sphynx' Console Commands [v1.0.6] PAUSE MENU OPTIONS** → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
@@ -234,7 +224,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🎯 How Keys & Binds Works
 
-<img width="1920" height="1040" alt="Keys & Binds" src="https://github.com/user-attachments/assets/f5f47ad6-02f7-4410-a773-0d923397dc99" />
+<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/14720ee4-e624-4e8e-9412-94149ef7ac7f" />
 
 **Action Binds (left)** — one row per action, one key per action. Change a key here and everything updates automatically.
 
