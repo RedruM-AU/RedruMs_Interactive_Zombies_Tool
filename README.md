@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.3.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.4.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 ---
 
@@ -13,7 +13,7 @@ RedruM's Interactive Zombies Tool connects TikTok LIVE streams directly into Cal
 - `!spin` command delivers randomised weighted effects from a customisable wheel
 - Every 5,000 likes triggers an automatic bonus spin
 
-<img width="1202" height="922" alt="Dashboard" src="https://github.com/user-attachments/assets/9f83a264-230e-4ff4-91a3-f2a6358f2daf" />
+<img width="1909" height="1028" alt="First launch" src="https://github.com/user-attachments/assets/683ede9e-7620-4b19-8e73-b644ab34555e" />
 
 ---
 
@@ -120,7 +120,6 @@ The application auto-detects active games and maintains separate configurations 
 - In-game wheel spin with slot machine animation
 - All in-game text displayed in red
 
-
 ### Setup & Export
 - Export Binds .cfg (BO3) — dynamically generated from current Action Binds
 - Export Binds .cfg (Plutonium) — correct filename per game
@@ -128,6 +127,13 @@ The application auto-detects active games and maintains separate configurations 
 - Export GSC (T6/T5)
 - Open GSC Folder — opens correct Plutonium folder in Explorer
 - Smart Autopath Scan — finds all Plutonium folders automatically
+- Collapsible sections for prerequisites and settings backup — less scrolling for returning users
+
+### Custom BO3 Actions
+- Add your own BO3 actions using any Sphynx console command — no manual cfg editing required
+- Quick Add builder with live bind-line preview as you type
+- One click adds the action to Action Binds and appends the bind line to `binds.cfg` automatically
+- Reference links to the Sphynx mod, full command list, and perk/powerup aliases
 
 ### Returning User Protection
 - Version check on launch with What's New notice
@@ -159,9 +165,9 @@ What started as a personal project became a full standalone platform built from 
 
 ## 📦 Installation
 
-<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/fbacf029-625c-4191-a346-c0e0e6278b1f" />
+<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/6d26444e-9e64-4eda-8af7-e1b8c1e5d6e4" />
 
-1. Download `RedruMs Interactive Zombies Tool v2.3.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
+1. Download `RedruMs Interactive Zombies Tool v2.4.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
    - Collect your BO3 directory, Plutonium GSC folder, and config paths
@@ -175,8 +181,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
-<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/9faceded-da46-4dc7-a830-c41baa51d8d4" />
-
+<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/e0d00151-02e1-41f0-9d25-003a51aebb0a" />
 
 1. **Install the required mod**
    **[ZM] Sphynx' Console Commands [v1.0.6] PAUSE MENU OPTIONS** → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
@@ -224,7 +229,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🎯 How Keys & Binds Works
 
-<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/14720ee4-e624-4e8e-9412-94149ef7ac7f" />
+<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/3001eeda-16ce-4330-bc5a-519e366f7e97" />
 
 **Action Binds (left)** — one row per action, one key per action. Change a key here and everything updates automatically.
 
@@ -384,6 +389,8 @@ For bug reports, copy the session log from the **Setup & Diagnostics** panel and
 ## 👤 Credits
 
 Built entirely by **RedruM** from scratch while learning to program.
+
+This tool is completely free. If you'd like to support continued development, you can do so on [Ko-fi](https://ko-fi.com/redrumau) — no functionality is gated behind it.
 
 ### Libraries Used
 - [TikTokLive](https://github.com/isaackogan/TikTokLive) — TikTok LIVE API wrapper
