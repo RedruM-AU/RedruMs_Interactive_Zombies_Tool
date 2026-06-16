@@ -13,7 +13,7 @@ RedruM's Interactive Zombies Tool connects TikTok LIVE streams directly into Cal
 - `!spin` command delivers randomised weighted effects from a customisable wheel
 - Every 5,000 likes triggers an automatic bonus spin
 
-<img width="1909" height="1028" alt="First launch" src="https://github.com/user-attachments/assets/683ede9e-7620-4b19-8e73-b644ab34555e" />
+<img width="1922" height="1049" alt="Dashboard" src="https://github.com/user-attachments/assets/7464d752-3e21-485d-83ab-e08e19ac5ac5" />
 
 ---
 
@@ -83,9 +83,11 @@ The application auto-detects active games and maintains separate configurations 
 - Session summary popup on stop
 
 ### Stats Tab
+---
 
 <img width="1920" height="1040" alt="Stats Tab" src="https://github.com/user-attachments/assets/14909387-2a31-4492-a30b-bb17edf2fdcb" />
 
+---
 - Session history — every session logged automatically with full breakdown
 - Personal bests — all-time records across every session
 - Lifetime totals — cumulative stats summed across all sessions
@@ -136,6 +138,7 @@ The application auto-detects active games and maintains separate configurations 
 
 <img width="754" height="406" alt="Setup & Diagnostics — Custom BO3 Actions" src="https://github.com/user-attachments/assets/6c113663-8ac5-435d-8e24-872e9326b504" />
 
+---
 - Add your own BO3 actions using any Sphynx console command — no manual cfg editing required
 - Quick Add builder with live bind-line preview as you type
 - One click adds the action to Action Binds and appends the bind line to `binds.cfg` automatically
@@ -173,6 +176,7 @@ What started as a personal project became a full standalone platform built from 
 
 <img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/6d26444e-9e64-4eda-8af7-e1b8c1e5d6e4" />
 
+---
 1. Download `RedruMs Interactive Zombies Tool v2.4.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
@@ -187,8 +191,9 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
-<img width="1920" height="1040" alt="Setup & Diagnostics Tab" src="https://github.com/user-attachments/assets/e0d00151-02e1-41f0-9d25-003a51aebb0a" />
+<img width="817" height="1034" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/f207a861-8e0a-4719-a6da-caa49157a082" />
 
+---
 1. **Install the required mod**
    **[ZM] Sphynx' Console Commands [v1.0.6] PAUSE MENU OPTIONS** → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
    Must be active in your mods list before launching.
@@ -235,8 +240,9 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🎯 How Keys & Binds Works
 
-<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/3001eeda-16ce-4330-bc5a-519e366f7e97" />
+<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/5b03f056-d09e-44a7-b808-d03e2accfebd" />
 
+---
 **Action Binds (left)** — one row per action, one key per action. Change a key here and everything updates automatically.
 
 **Wheel Spin Pool (middle)** — select which actions appear on the wheel and set rarity (1–10). Keys resolve from Action Binds automatically.
