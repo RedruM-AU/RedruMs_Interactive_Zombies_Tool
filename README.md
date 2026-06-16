@@ -83,6 +83,9 @@ The application auto-detects active games and maintains separate configurations 
 - Session summary popup on stop
 
 ### Stats Tab
+
+<img width="1920" height="1040" alt="Stats Tab" src="https://github.com/user-attachments/assets/14909387-2a31-4492-a30b-bb17edf2fdcb" />
+
 - Session history — every session logged automatically with full breakdown
 - Personal bests — all-time records across every session
 - Lifetime totals — cumulative stats summed across all sessions
@@ -130,6 +133,9 @@ The application auto-detects active games and maintains separate configurations 
 - Collapsible sections for prerequisites and settings backup — less scrolling for returning users
 
 ### Custom BO3 Actions
+
+<img width="754" height="406" alt="Setup & Diagnostics — Custom BO3 Actions" src="https://github.com/user-attachments/assets/6c113663-8ac5-435d-8e24-872e9326b504" />
+
 - Add your own BO3 actions using any Sphynx console command — no manual cfg editing required
 - Quick Add builder with live bind-line preview as you type
 - One click adds the action to Action Binds and appends the bind line to `binds.cfg` automatically
@@ -181,7 +187,7 @@ What started as a personal project became a full standalone platform built from 
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
-<img width="1920" height="1040" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/e0d00151-02e1-41f0-9d25-003a51aebb0a" />
+<img width="1920" height="1040" alt="Setup & Diagnostics Tab" src="https://github.com/user-attachments/assets/e0d00151-02e1-41f0-9d25-003a51aebb0a" />
 
 1. **Install the required mod**
    **[ZM] Sphynx' Console Commands [v1.0.6] PAUSE MENU OPTIONS** → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
@@ -387,7 +393,6 @@ For bug reports, copy the session log from the **Setup & Diagnostics** panel and
 ---
 
 ## 👤 Credits
-
 Built entirely by **RedruM** from scratch while learning to program.
 
 This tool is completely free. If you'd like to support continued development, you can do so on [Ko-fi](https://ko-fi.com/redrumau) — no functionality is gated behind it.
