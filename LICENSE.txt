@@ -1,6 +1,6 @@
 RedruM's Interactive Zombies Tool
 Copyright © 2026 RedruM (@redrum.au)
-Version 2.2.0
+Version 2.4.0
 =========================================================
 LICENSE AGREEMENT & TERMS OF USE
 =========================================================
@@ -30,8 +30,8 @@ SUPPORTED GAMES
   - Black Ops 1 Zombies (Plutonium T5)
 
 This tool connects your TikTok LIVE stream to your game.
-Viewers can interact in real time via likes, gifts, and
-chat commands — all routed through the in-game keybind system.
+Viewers interact in real time via likes, gifts, and chat
+commands — all routed through the in-game keybind system.
 =========================================================
 ANTIVIRUS FALSE POSITIVE NOTICE
 =========================================================
@@ -68,9 +68,8 @@ This is the only official distribution source for this tool.
 Do not download from any other source.
 
 For support or bug reports, copy the session log from the
-Debug panel in the app and send it via TikTok DM,
-or open a GitHub Issue.
+Setup & Diagnostics panel and send via TikTok DM.
 
 Thank you for using the tool. Let's make some chaos in Zombies.
 
-Created by RedruM — May 2026
+Created by RedruM — June 2026
