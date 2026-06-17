@@ -391,10 +391,12 @@ AppData config is cleaned up automatically. `binds.cfg` and GSC files remain unl
 
 | Platform | Link |
 |----------|------|
+| Discord | [RedruM's Server](https://discord.gg/atgQj8Fa8t) |
 | TikTok | [@redrum.au](https://tiktok.com/@redrum.au) |
 | GitHub | [RedruMs_Interactive_Zombies_Tool](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool) |
 | Releases | [Latest Release](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) |
-For bug reports, copy the session log from the **Setup & Diagnostics** panel and send via TikTok DM.
+
+For bug reports, copy the session log from the **Setup & Diagnostics** panel and post in the [Discord server](https://discord.gg/atgQj8Fa8t) or send via TikTok DM.
 
 ---
 
