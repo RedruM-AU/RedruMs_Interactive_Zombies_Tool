@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.4.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.4.1 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 ---
 
@@ -81,6 +81,7 @@ The application auto-detects active games and maintains separate configurations 
 - Toast notifications — pop-up alerts for spins, follows, like rewards, and personal bests
 - Animated launch button — pulses while the bot is running
 - Session summary popup on stop
+- Demo Mode — simulates a live session without a TikTok stream; fires randomised likes, gifts, follows, and chat spins to test the full event pipeline
 
 ### Stats Tab
 ---
@@ -177,7 +178,7 @@ What started as a personal project became a full standalone platform built from 
 <img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/6d26444e-9e64-4eda-8af7-e1b8c1e5d6e4" />
 
 ---
-1. Download `RedruMs Interactive Zombies Tool v2.4.0 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
+1. Download `RedruMs Interactive Zombies Tool v2.4.1 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
 2. Run the installer — it will:
    - Install the application
    - Collect your BO3 directory, Plutonium GSC folder, and config paths
