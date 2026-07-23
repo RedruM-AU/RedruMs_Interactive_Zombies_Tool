@@ -22,6 +22,7 @@ property of the author.
 
 THIS TOOL IS FREE. IF YOU PAID FOR IT, YOU WERE SCAMMED.
 Report scammers via TikTok DM: @redrum.au
+or in the Discord server: discord.gg/yhyaqvFmW9
 =========================================================
 SUPPORTED GAMES
 =========================================================
@@ -60,6 +61,8 @@ CONTACT & OFFICIAL DISTRIBUTION
 TikTok:   @redrum.au
           tiktok.com/@redrum.au
 
+Discord:  discord.gg/yhyaqvFmW9
+
 GitHub:   github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool
 
 Releases: github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases
@@ -68,7 +71,8 @@ This is the only official distribution source for this tool.
 Do not download from any other source.
 
 For support or bug reports, copy the session log from the
-Setup & Diagnostics panel and send via TikTok DM.
+Setup & Diagnostics panel and send via TikTok DM or post it
+in the Discord server.
 
 Thank you for using the tool. Let's make some chaos in Zombies.
 
