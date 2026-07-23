@@ -209,7 +209,7 @@ The uninstaller asks whether to keep or remove your settings and stats. GSC and 
 
 | Platform | Link |
 |----------|------|
-| Discord | [RedruM's Server](https://discord.gg/atgQj8Fa8t) |
+| Discord | [RedruM's Server](https://discord.gg/yhyaqvFmW9) |
 | TikTok | [@redrum.au](https://tiktok.com/@redrum.au) |
 | Releases | [Latest Release](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) |
 
