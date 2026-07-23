@@ -1,19 +1,17 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.4.1 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.5.0 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 ---
 
 ## ❓ What Is This?
 
-RedruM's Interactive Zombies Tool connects TikTok LIVE streams directly into Call of Duty Zombies gameplay. Viewer interactions — likes, gifts, and chat commands — trigger real-time in-game effects across three supported titles.
+Connects your TikTok LIVE stream directly into Call of Duty Zombies. Viewer likes, gifts, and chat commands trigger real in-game effects while you play.
 
-- Likes generate points and bonus spins at milestone thresholds
-- Gifts activate immediate in-game actions
-- `!spin` command delivers randomised weighted effects from a customisable wheel
+- Likes earn points and bonus spins
+- Gifts fire in-game actions instantly
+- `!spin` in chat rolls a weighted effect wheel
 - Every 5,000 likes triggers an automatic bonus spin
-
-<img width="1922" height="1049" alt="Dashboard" src="https://github.com/user-attachments/assets/7464d752-3e21-485d-83ab-e08e19ac5ac5" />
 
 ---
 
@@ -25,285 +23,119 @@ RedruM's Interactive Zombies Tool connects TikTok LIVE streams directly into Cal
 | Black Ops 2 Zombies | Plutonium (T6) | ✅ Full Support |
 | Black Ops 1 Zombies | Plutonium (T5) | ✅ Full Support |
 
-The application auto-detects active games and maintains separate configurations per title.
+The app auto-detects which game is running and keeps a separate configuration per title.
 
 ---
 
-## ⚡ Feature List
+## ⚡ Features
 
-### Core
-- Real-time TikTok LIVE integration — likes, gifts, follows, comments
-- Live viewer counter
-- Priority keypress queue with overflow protection
-- Auto game detection via process scanning every 5 seconds
-- Per-game profile system with instant switching
-- Independent configuration persistence per game
-- Auto-reconnect with reconnect counter and TTS alert
-- System tray support — minimize to tray, restore or terminate from icon
-- Minimize to Tray toggle — disable to make X close the app normally
-- Single-instance lock — prevents multiple copies running simultaneously
-- Window size and position remembered between sessions
+### Live Interaction
+- Real-time TikTok LIVE events — likes, gifts, follows, chat
+- Weighted spin wheel with anti-repeat and per-user cooldowns
+- Gift Routing Matrix — map any TikTok gift to any action
+- Gift stacking, gift combining (T5/T6), and queued spins so effects never overlap
+- Like milestones with TTS callouts up to 25K
+- Live viewer counter, chat feed, spin history, top gifters
+- Session uptime and likes-per-minute readout while live
 
 ### Keys & Binds
-- Single Action Binds panel as the source of truth for every keybind
-- Changes propagate automatically to spin wheel, gift matrix, and cfg export
-- Wheel Spin Pool — select effects and set rarity weights (1–10 scale)
-- Gift Routing Matrix — map TikTok gifts to actions by name
-- New actions merge automatically without data loss
-- Per-game reset option
+- One Action Binds panel drives everything — change a key once, the wheel, gifts, and exports all update
+- Click a key field and press the key you want — no typing key names
+- Search box to filter actions, zebra-striped tables, resizable panels
+- Unmatched gifts received on stream can be added to the matrix in one click
+- Named presets, per-game reset, key conflict and drift detection
 
-### Interaction
-- Weighted spin wheel with anti-repeat buffer
-- BO3 gift types: Direct Key Bind, Wheel Spin, 3rd Person 15s, Random Timescale, Powerup Rain, Random Powerup, Aimbot Timer, Infinite Ammo Timer
-- T5/T6 gift types: Direct Key Bind, Wheel Spin
-- Gift accumulation with 2-second batching window (T5/T6)
-- Sequential wheel execution with 8-second gaps (T5/T6)
-- Gift stacking up to 10x with stack-specific TTS
-- Adjustable per-user cooldowns — gifters 3 min / viewers 10 min default
-- Like milestones: 1K through 25K with dedicated TTS callouts
-- Automatic +1,000 points per 1,000 likes
+### Settings Tab
+- Audio & TTS — volume, speed, Windows voice picker, test button, per-type TTS toggles
+- Cooldowns, Events, and Reward configuration in one place
+- **Advanced tuning** — gift stack cap, spin queue delay, gift combine window, milestone step, effect durations
+- 20 themes (dark, light, AMOLED) grouped by colour, plus a custom accent colour picker
+- Font size scaling for readability
+- One-click settings backup and restore
 
 ### Text-to-Speech
-- Offline TTS via pyttsx3 — no internet required
-- Action-matched announcements reflecting actual in-game effects
-- 43+ specific effect callouts
-- Automatic effect name lookup from action binds
-- Volume and speed sliders with instant mute toggle
-- Individual toggles: Gifter Chat TTS, Gift Action TTS, Spin TTS, Follower TTS
-- Live audio gauge visualiser
-- Reconnect alert announcement
+- Fully offline (pyttsx3) — no internet required
+- Action-matched callouts for gifts, spins, follows, and milestones
+- Live audio gauge and instant mute
 
-### Dashboard
-- Live viewer count
-- Live chat feed — last 50 messages, auto-trimmed
-- Spin history — last 5 spins with username
-- Session statistics row — follows, gifts, spins, viewers
-- Toast notifications — pop-up alerts for spins, follows, like rewards, and personal bests
-- Animated launch button — pulses while the bot is running
-- Session summary popup on stop
-- Demo Mode — simulates a live session without a TikTok stream; fires randomised likes, gifts, follows, and chat spins to test the full event pipeline
+### Game Integration
+- **BO3:** dynamic `binds.cfg` export using the Sphynx Console Commands mod, plus a Custom Actions builder for any Sphynx command
+- **T6/T5:** silent GSC say-bridge — no chat spam on stream, in-game slot machine spin animation, map-aware wonder weapons and boss spawns
+- Auto-write binds and GSC to your configured paths on every save
+- Smart Autopath Scan finds your game installs automatically
 
-### Stats Tab
----
+### Stream Extras
+- **OBS Overlay** — live stats written to text files OBS shows on stream: likes, viewers, bonus spin progress, last gift, last spin, top gifter and more
+- **Achievements** — 20 to unlock; session milestones pop live on stream with TTS
+- Smarter TTS — stack-size reactions, gifter streak callouts, hourly live callouts, rare spin lines
 
-<img width="1920" height="1040" alt="Stats Tab" src="https://github.com/user-attachments/assets/14909387-2a31-4492-a30b-bb17edf2fdcb" />
-
----
-- Session history — every session logged automatically with full breakdown
-- Personal bests — all-time records across every session
-- Lifetime totals — cumulative stats summed across all sessions
-- Clear history and reset records independently
-
-### Dashboard Toggles
-- **Like Reward / Follow Reward / Gifts** — enable or disable each event independently
-- **Follower TTS** — separate toggle for follow shoutouts, independent of Follow Reward
-- **!spin** — allow or block the chat spin command
-- **Gift TTS / Spin TTS** — mute announcements without affecting other TTS
-- **Bonus Spin** — disable automatic bonus spins while keeping points active
-- **Auto-Focus** — automatically focus the game window before keypresses
-- **Minimize to Tray** — controls whether X minimizes or closes
-
-### Configuration
-- Per-game action registry with name, key, and Sphynx command
-- Per-game spin wheel configuration
-- Per-game gift matrix
-- Named preset profiles — save and load complete configurations
-- Auto-save on launch and terminate
-- Auto-write binds files to configured paths on every save
-- JSON config at `%APPDATA%\BO3TikTokBot\config.json`
-
-### BO3 Binds Export
-- Dynamically generated from Action Binds panel
-- Key changes reflected immediately on next save
-- 35 actions including points, powerups, weapons, perks, ammo, chaos effects, zombies, and round controls
-- All Sphynx commands verified against the official command list
-
-### Plutonium GSC Integration (T6/T5)
-- Silent say-bridge — bot presses key → GSC catches `say !botcmd_X` silently
-- T6: 33 in-game actions
-- T5: 23 in-game actions
-- 37-weapon random deck (Fisher-Yates shuffle — all 37 before any repeat)
-- In-game wheel spin with slot machine animation
-- All in-game text displayed in red
-
-### Setup & Export
-- Export Binds .cfg (BO3) — dynamically generated from current Action Binds
-- Export Binds .cfg (Plutonium) — correct filename per game
-- Auto-write on save
-- Export GSC (T6/T5)
-- Open GSC Folder — opens correct Plutonium folder in Explorer
-- Smart Autopath Scan — finds all Plutonium folders automatically
-- Collapsible sections for prerequisites and settings backup — less scrolling for returning users
-
-### Custom BO3 Actions
-
-<img width="754" height="406" alt="Setup & Diagnostics — Custom BO3 Actions" src="https://github.com/user-attachments/assets/6c113663-8ac5-435d-8e24-872e9326b504" />
-
----
-- Add your own BO3 actions using any Sphynx console command — no manual cfg editing required
-- Quick Add builder with live bind-line preview as you type
-- One click adds the action to Action Binds and appends the bind line to `binds.cfg` automatically
-- Reference links to the Sphynx mod, full command list, and perk/powerup aliases
-
-### Returning User Protection
-- Version check on launch with What's New notice
-- Full configuration preserved across updates
-- Actions merge and clean up automatically on version updates
-- Installer never overwrites existing GSC or binds files
-
-### Diagnostics
-- Keypress emulator — 3-second countdown then fires a test key
-- Sign API health check — pings TikTok's endpoint
-- Session log — full timestamped activity feed, copy to clipboard
-- Reconnect counter
-- Keybind drift detector — warns on save if keys changed since last export
-- Contextual tooltips on every control across all tabs
+### Quality of Life
+- Demo Mode — test your full setup without being live
+- Stats tab — session history, personal bests, lifetime totals, achievements, lifetime top gifters
+- Crash-safe config with automatic backup recovery
+- Auto-reconnect that keeps all events working after a drop
+- System tray support, single-instance lock, opens maximized
+- Update checker with preserved configuration across versions
 
 ---
 
 ## 💡 Why I Made This
 
-I originally created this tool because I wanted to run my own fully interactive Black Ops 3 Zombies TikTok LIVE streams.
+I built this to run my own fully interactive BO3 Zombies TikTok streams. Most existing tools were locked behind subscriptions, so I made one with complete freedom and no paywalls — while teaching myself programming along the way.
 
-At the time, most existing TikTok interaction tools were heavily restricted, locked behind subscriptions, or required paid tiers for basic functionality. I wanted a system that gave streamers complete freedom without paywalls.
-
-What started as a personal project became a full standalone platform built from the ground up while teaching myself programming. The goal was something powerful, stable, and accessible for the COD Zombies streaming community.
-
-*This tool is distributed for free because interactive livestreaming should be accessible to everyone.*
+*Free forever, because interactive livestreaming should be accessible to everyone.*
 
 ---
 
 ## 📦 Installation
 
-<img width="598" height="464" alt="Setup Wizard" src="https://github.com/user-attachments/assets/6d26444e-9e64-4eda-8af7-e1b8c1e5d6e4" />
-
----
-1. Download `RedruMs Interactive Zombies Tool v2.4.1 Setup.exe` from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
-2. Run the installer — it will:
-   - Install the application
-   - Collect your BO3 directory, Plutonium GSC folder, and config paths
-   - Optionally copy `binds.cfg` to your BO3 players folder
-   - Optionally copy GSC files to the correct Plutonium folders
-   - Save paths so the app can auto-write on every save
-   - Add a Windows Defender exclusion automatically
-   - Create a Desktop shortcut
+1. Download the Setup exe from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases)
+2. Run the installer — it sets up paths, copies GSC/binds files to your game folders, offers a Defender exclusion, and creates a desktop shortcut
 
 ---
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
 
-<img width="817" height="1034" alt="Setup   diagnostics Tab" src="https://github.com/user-attachments/assets/f207a861-8e0a-4719-a6da-caa49157a082" />
-
----
-1. **Install the required mod**
-   **[ZM] Sphynx' Console Commands [v1.0.6] PAUSE MENU OPTIONS** → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
-   Must be active in your mods list before launching.
-
-2. **Use a controller**
-   The bot uses your keyboard exclusively for in-game commands.
-
-3. **Set Borderless Windowed**
-   BO3 graphics settings → Display Mode → Windowed (Borderless)
-
-4. **Export and load keybinds**
-   Setup & Diagnostics → Export Binds .cfg (BO3) → save to your BO3 players folder → run `/exec binds.cfg` in console.
-   If you set your BO3 path during install, binds.cfg updates automatically on every save.
-
+1. **Install the required mod:** [ZM] Sphynx' Console Commands [v1.0.6] → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
+2. **Play on a controller** — the bot uses your keyboard for commands
+3. **Set Display Mode to Windowed (Borderless)**
+4. **Export binds:** Setup & Diagnostics → Export Binds .cfg (BO3) → save to your BO3 players folder → run `/exec binds.cfg` in console
 5. **Go live on TikTok first, then click Launch**
-
----
 
 ## 🛠️ Setup — Plutonium (T6/T5)
 
-1. **Install the GSC script**
-   Setup & Diagnostics → Export GSC → place in the correct folder:
+1. **Install the GSC script:** Setup & Diagnostics → Export GSC → place in:
 
    | Game | Folder |
    |------|--------|
    | BO2 T6 | `%localappdata%\Plutonium\storage\t6\raw\scripts\zm` |
    | BO1 T5 | `%localappdata%\Plutonium\storage\t5\raw\scripts\sp` |
 
-   Click **Open GSC Folder** to navigate there directly.
-
-2. **Load keybinds**
-   Export Binds .cfg (Plutonium) → copy to your Plutonium players folder → run the exec command in console:
-   - T6: `exec bot_binds.cfg`
-   - T5: `exec pluto_t5_binds.cfg`
-
-3. **Start as host** — GSC only runs if you are the lobby host
-
-4. **Set Borderless Windowed**
-   Plutonium doesn't have native borderless. Use **[Borderless Gaming](https://github.com/andrewmd5/Borderless-Gaming/releases)**.
-
+2. **Load binds:** Export Binds .cfg (Plutonium) → copy to your players folder → in console: `exec bot_binds.cfg` (T6) or `exec pluto_t5_binds.cfg` (T5)
+3. **Start as host** — GSC only runs for the lobby host
+4. **Use [Borderless Gaming](https://github.com/andrewmd5/Borderless-Gaming/releases)** — fullscreen blocks keypresses
 5. **Go live on TikTok first, then click Launch**
-
----
-
-## 🎯 How Keys & Binds Works
-
-<img width="1920" height="1040" alt="Binds Tab" src="https://github.com/user-attachments/assets/5b03f056-d09e-44a7-b808-d03e2accfebd" />
-
----
-**Action Binds (left)** — one row per action, one key per action. Change a key here and everything updates automatically.
-
-**Wheel Spin Pool (middle)** — select which actions appear on the wheel and set rarity (1–10). Keys resolve from Action Binds automatically.
-
-**Gift Routing Matrix (right)** — map TikTok gifts to actions by name. Key resolves automatically.
 
 ---
 
 ## 🎮 How Viewers Interact
 
-### ❤️ Likes
-
 | Event | Effect |
 |-------|--------|
 | Every 1,000 likes | +1,000 in-game points |
 | Every 5,000 likes | Bonus random spin |
-| 1K / 2.5K / 5K / 7.5K / 10K | TTS milestone callout |
-| Every 2.5K after 10K | Continued callouts through 25K |
+| Gifts | Fire their mapped action instantly |
+| `!spin` in chat | Random weighted effect — 10 min cooldown (3 min for gifters) |
 
-### 🎁 Gifts
-
-| Action Type | Effect |
-|-------------|--------|
-| Direct Key Bind Only | Fires the assigned action once |
-| Wheel Spin | Triggers a random weighted spin |
-| 3rd Person 15s | Switches camera for 15 seconds *(BO3 only)* |
-| Random Timescale | Fast or slow timescale for 20 seconds *(BO3 only)* |
-| Powerup Rain | Fires powerup 10 times over 7.5 seconds *(BO3 only)* |
-| Random Powerup | Drops one random powerup *(BO3 only)* |
-
-Gifters receive faster `!spin` cooldown (3 min vs 10 min) and chat messages read aloud.
-
-### 💬 Chat Commands
-
-| Command | Effect | Cooldown |
-|---------|--------|----------|
-| `!spin` | Random weighted spin effect | 10 min (3 min for gifters) |
-
----
-
-## 🔧 Diagnostics
-
-| Tool | Purpose |
-|------|---------|
-| Keypress Emulator | 3-second countdown → fires test key → confirms pyautogui works |
-| Sign API Health Check | Pings TikTok endpoint → reports online or blocked |
-| Copy Session Log | Copies full activity log to clipboard for bug reports |
-| Smart Autopath Scan | Finds BO3 and Plutonium installations automatically |
-| Reconnect Counter | Shows how many times the bot reconnected this session |
+Gifters also get their chat messages read aloud. All thresholds and cooldowns are adjustable in Settings.
 
 ---
 
 ## ⚠️ Antivirus Warning
 
-You may see a Windows Defender SmartScreen warning. This is a **false positive**. The program simulates keyboard input and connects to the internet — behaviours that trigger antivirus heuristics even though the code is safe.
+You may see a Windows Defender SmartScreen warning. This is a **false positive** — the program simulates keyboard input and reads TikTok LIVE data, which triggers antivirus heuristics even on safe software.
 
-1. Click **More Info**
-2. Click **Run Anyway**
-
-The installer adds a Windows Defender exclusion automatically.
+Click **More Info → Run Anyway**. The installer can add a Defender exclusion for you (checkbox during install).
 
 ---
 
@@ -312,67 +144,54 @@ The installer adds a Windows Defender exclusion automatically.
 <details>
 <summary><b>Keys not working in BO3</b></summary>
 
-- Make sure BO3 is the active focused window (Windowed Borderless required)
+- BO3 must be in Windowed (Borderless) and focused
 - Run the bot as Administrator
-- Confirm the Sphynx mod is active in your mods list
-- Run `/exec binds.cfg` in the BO3 console
-- Test with the Keypress Emulator in Setup & Diagnostics
+- Sphynx mod must be active
+- Re-run `/exec binds.cfg` in console
+- Test with the Keypress Test in Setup & Diagnostics
 
 </details>
 
 <details>
 <summary><b>Nothing happening in Plutonium</b></summary>
 
-- Make sure you ran `exec bot_binds.cfg` (T6) or `exec pluto_t5_binds.cfg` (T5) in console
-- Make sure you are the HOST of the lobby
-- Confirm the GSC file is in the correct folder
-- After placing the GSC, run `map_restart` in console
-- Make sure Plutonium is in Windowed mode with **[Borderless Gaming](https://github.com/andrewmd5/Borderless-Gaming/releases)** active — fullscreen blocks keypresses
+- Run the exec command in console (`exec bot_binds.cfg` / `exec pluto_t5_binds.cfg`)
+- You must be the lobby HOST
+- GSC file must be in the correct folder — run `map_restart` after placing it
+- Use Borderless Gaming — fullscreen blocks keypresses
 
 </details>
 
 <details>
-<summary><b>!botcmd message appearing on HUD in Plutonium</b></summary>
+<summary><b>!botcmd text on HUD in Plutonium</b></summary>
 
-The bot uses `say !botcmd_X` to pass commands to the GSC script. To hide it, disable text chat display in your Plutonium in-game settings. The GSC will still receive and process all commands correctly.
-
-</details>
-
-<details>
-<summary><b>Binds not updating after key change</b></summary>
-
-- Change your key in the Action Binds panel
-- Click Save Configuration — the cfg file is rewritten automatically
-- For BO3: re-run `/exec binds.cfg` in console
-- For Plutonium: re-run the exec command in console (prompted automatically)
+Disable text chat display in your Plutonium in-game settings. The GSC still receives every command.
 
 </details>
 
 <details>
 <summary><b>Bot won't connect to TikTok</b></summary>
 
-- You must be actively LIVE on TikTok before launching
-- Check your TikTok handle is correct on the Dashboard
-- Run the Sign API Health Check in Setup & Diagnostics
+- You must be actively LIVE before launching
+- Check your TikTok handle on the Dashboard
+- Run the TikTok API Health Check in Setup & Diagnostics
 
 </details>
 
 <details>
 <summary><b>No TTS voice</b></summary>
 
-- Check the TTS volume slider is above 0
-- Check the mute button is not active
-- Check Gift TTS, Spin TTS, Gifter Chat TTS, and Follower TTS toggles on the Dashboard
-- Check your Windows default audio output device
+- Check the Mute TTS button on the Dashboard
+- Check volume, voice, and TTS toggles in the Settings tab
+- Use Test Voice in Settings to confirm audio works
 
 </details>
 
 <details>
-<summary><b>Missing actions after update</b></summary>
+<summary><b>Binds not updating after a key change</b></summary>
 
-- New actions added in updates merge automatically — no reset needed
-- Removed actions disappear automatically on next launch
-- If an action is still missing, click Reset to Defaults in Keys & Binds
+- Change the key in Action Binds → Save Configuration
+- Re-run the exec command in the game console
 
 </details>
 
@@ -380,11 +199,9 @@ The bot uses `say !botcmd_X` to pass commands to the GSC script. To hide it, dis
 
 ## ❌ Uninstall
 
-1. **Start Menu → Settings → Apps → Installed Apps**
-2. Search **RedruM's Interactive Zombies Tool**
-3. Click **Uninstall**
+**Settings → Apps → RedruM's Interactive Zombies Tool → Uninstall**
 
-AppData config is cleaned up automatically. `binds.cfg` and GSC files remain unless deleted manually.
+The uninstaller asks whether to keep or remove your settings and stats. GSC and cfg files in game folders remain unless deleted manually.
 
 ---
 
@@ -394,22 +211,22 @@ AppData config is cleaned up automatically. `binds.cfg` and GSC files remain unl
 |----------|------|
 | Discord | [RedruM's Server](https://discord.gg/atgQj8Fa8t) |
 | TikTok | [@redrum.au](https://tiktok.com/@redrum.au) |
-| GitHub | [RedruMs_Interactive_Zombies_Tool](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool) |
 | Releases | [Latest Release](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) |
 
-For bug reports, copy the session log from the **Setup & Diagnostics** panel and post in the [Discord server](https://discord.gg/atgQj8Fa8t) or send via TikTok DM.
+For bug reports, copy the session log from Setup & Diagnostics and post it in Discord or DM on TikTok.
 
 ---
 
 ## 👤 Credits
+
 Built entirely by **RedruM** from scratch while learning to program.
 
-This tool is completely free. If you'd like to support continued development, you can do so on [Ko-fi](https://ko-fi.com/redrumau) — no functionality is gated behind it.
+Completely free — if you'd like to support development: [Ko-fi](https://ko-fi.com/redrumau). Nothing is gated behind it.
 
 ### Libraries Used
 - [TikTokLive](https://github.com/isaackogan/TikTokLive) — TikTok LIVE API wrapper
-- [pyautogui](https://github.com/asweigart/pyautogui) — keyboard macro injection
+- [pyautogui](https://github.com/asweigart/pyautogui) — keypress simulation
 - [pyttsx3](https://github.com/nateshmbhat/pyttsx3) — offline text-to-speech
-- [pystray](https://github.com/moses-palmer/pystray) — system tray integration
-- [psutil](https://github.com/giampaolo/psutil) — process enumeration for auto game detection
+- [pystray](https://github.com/moses-palmer/pystray) — system tray
+- [psutil](https://github.com/giampaolo/psutil) — auto game detection
 - [pygetwindow](https://github.com/asweigart/PyGetWindow) — game window focus
