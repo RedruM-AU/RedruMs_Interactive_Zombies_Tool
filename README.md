@@ -13,6 +13,8 @@ Connects your TikTok LIVE stream directly into Call of Duty Zombies. Viewer like
 - `!spin` in chat rolls a weighted effect wheel
 - Every 5,000 likes triggers an automatic bonus spin
 
+![Dashboard](docs/screenshots/dashboard.png)
+
 ---
 
 ## 🎮 Supported Games
@@ -45,6 +47,8 @@ The app auto-detects which game is running and keeps a separate configuration pe
 - Unmatched gifts received on stream can be added to the matrix in one click
 - Named presets, per-game reset, key conflict and drift detection
 
+![Keys & Binds](docs/screenshots/keys-and-binds.png)
+
 ### Settings Tab
 - Audio & TTS — volume, speed, Windows voice picker, test button, per-type TTS toggles
 - Cooldowns, Events, and Reward configuration in one place
@@ -52,6 +56,8 @@ The app auto-detects which game is running and keeps a separate configuration pe
 - 20 themes (dark, light, AMOLED) grouped by colour, plus a custom accent colour picker
 - Font size scaling for readability
 - One-click settings backup and restore
+
+![Settings](docs/screenshots/settings.png)
 
 ### Text-to-Speech
 - Fully offline (pyttsx3) — no internet required
@@ -77,6 +83,8 @@ The app auto-detects which game is running and keeps a separate configuration pe
 - System tray support, single-instance lock, opens maximized
 - Update checker with preserved configuration across versions
 
+![Stats & Achievements](docs/screenshots/stats.png)
+
 ---
 
 ## 💡 Why I Made This
@@ -95,6 +103,8 @@ I built this to run my own fully interactive BO3 Zombies TikTok streams. Most ex
 ---
 
 ## 🛠️ Setup — Black Ops 3 (Steam)
+
+![Setup & Diagnostics](docs/screenshots/setup-diagnostics.png)
 
 1. **Install the required mod:** [ZM] Sphynx' Console Commands [v1.0.6] → [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766)
 2. **Play on a controller** — the bot uses your keyboard for commands
