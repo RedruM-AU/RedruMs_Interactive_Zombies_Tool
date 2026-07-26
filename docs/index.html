@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RedruM's Interactive Zombies Tool - Free TikTok Live Interaction for COD Zombies</title>
+<meta name="description" content="Free multi-game TikTok Live interaction tool for Call of Duty Zombies (BO3, BO2, BO1). Viewer likes, gifts, and chat commands trigger real in-game effects while you play.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="dot"></span>
+      REDRUM'S <small>// Interactive Zombies Tool</small>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#games">Games</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#get-started">Get Started</a>
+      <a href="#community">Community</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">Download</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <nav class="nav-links-mobile" id="nav-links-mobile">
+    <a href="#features">Features</a>
+    <a href="#games">Games</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#get-started">Get Started</a>
+    <a href="#community">Community</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Free &middot; BO3 &middot; BO2 &middot; BO1</span>
+        <h1>Turn your TikTok LIVE into a Zombies game master.</h1>
+        <p class="lead">Connects your TikTok LIVE stream directly into Call of Duty Zombies. Viewer likes, gifts, and chat commands trigger real in-game effects while you play.</p>
+        <ul class="hero-facts">
+          <li>Likes earn points and bonus spins</li>
+          <li>Gifts fire in-game actions instantly</li>
+          <li><code>!spin</code> in chat rolls a weighted effect wheel</li>
+          <li>Every 5,000 likes triggers an automatic bonus spin</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">⬇ Download for Windows</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/watch?v=hDc3MxrjlYg" target="_blank" rel="noopener">▶ Watch Setup Tutorial</a>
+        </div>
+        <p class="hero-meta"><span id="hero-version">v2.5.1</span> &nbsp;·&nbsp; <strong>100% free.</strong> Always will be.</p>
+      </div>
+      <div class="hero-image">
+        <div class="window">
+          <img id="hero-slideshow-img" src="screenshots/dashboard.png" alt="RedruM's Interactive Zombies Tool dashboard showing live stats, chat feed, and game status" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="wrap">
+      <span class="tag">READ THIS</span>
+      <p><strong>100% free. Always will be.</strong> If you paid for this, you got scammed. This GitHub repo is the only official distribution source; report resellers via <a href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a> or TikTok DM <a href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">@redrum.au</a>.</p>
+    </div>
+  </section>
+
+  <section id="games">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Supported Games</span>
+        <h2>Three games, one bot.</h2>
+        <p>The app auto-detects which game is running and keeps a separate configuration per title; switch mid-session without losing anything.</p>
+      </div>
+      <div class="games-grid">
+        <div class="game-card">
+          <h3>Black Ops 3 Zombies</h3>
+          <div class="platform">Steam</div>
+          <span class="pill">Full Support</span>
+        </div>
+        <div class="game-card">
+          <h3>Black Ops 2 Zombies</h3>
+          <div class="platform">Plutonium (T6)</div>
+          <span class="pill">Full Support</span>
+        </div>
+        <div class="game-card">
+          <h3>Black Ops 1 Zombies</h3>
+          <div class="platform">Plutonium (T5)</div>
+          <span class="pill">Full Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Features</span>
+        <h2>Built for actually running a stream.</h2>
+        <p>A handful of the highlights; the full list lives in the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool#readme" target="_blank" rel="noopener">README</a>.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">⇄</div>
+          <h3>Gift Routing Matrix</h3>
+          <p>Maps any TikTok gift to any in-game action. Unmatched gifts received on stream can be added in one click.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">♫</div>
+          <h3>Smarter TTS</h3>
+          <p>Layers in stacked reactions, gifter streak callouts, hourly callouts, follow milestones, and rare 1-in-100 spin lines.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">▣</div>
+          <h3>OBS Overlay</h3>
+          <p>Writes live stats - likes, viewers, gifts, spins, top gifter, recent chat and more - straight to text files for OBS Text Sources.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⚙</div>
+          <h3>One-Click Setup</h3>
+          <p>Auto-detects your install paths and exports GSC/binds files with a single click - no digging through folders.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">▤</div>
+          <h3>Stats &amp; Leaderboards</h3>
+          <p>Tracks session history, personal bests, and a Lifetime Top Gifters leaderboard automatically.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">★</div>
+          <h3>Achievements</h3>
+          <p>Unlocks 20 during a session, with live TTS callouts the moment your viewers earn them.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⟲</div>
+          <h3>Backup &amp; Restore</h3>
+          <p>Exports your entire configuration - keybinds, gift matrix, everything - and restores it in seconds after a reinstall.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">◐</div>
+          <h3>20 Themes</h3>
+          <p>Includes AMOLED Black, plus a custom accent colour picker and font size scaling.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⏵</div>
+          <h3>Demo Mode</h3>
+          <p>Simulates a full live session without actually being live - great for testing or recording showcase footage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Screenshots</span>
+        <h2>Inside the tool.</h2>
+        <p>Use the arrows to browse, click a shot to view it full screen.</p>
+      </div>
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <button class="carousel-slide" data-full="screenshots/dashboard.png" data-alt="Bot Dashboard">
+            <img src="screenshots/dashboard.png" alt="Bot Dashboard" loading="eager">
+          </button>
+          <button class="carousel-slide" data-full="screenshots/keys-and-binds.png" data-alt="Keys and Binds panel">
+            <img src="screenshots/keys-and-binds.png" alt="Keys and Binds panel" loading="eager">
+          </button>
+          <button class="carousel-slide" data-full="screenshots/settings.png" data-alt="Settings tab">
+            <img src="screenshots/settings.png" alt="Settings tab" loading="lazy">
+          </button>
+          <button class="carousel-slide" data-full="screenshots/setup-diagnostics.png" data-alt="Setup and Diagnostics tab">
+            <img src="screenshots/setup-diagnostics.png" alt="Setup and Diagnostics tab" loading="lazy">
+          </button>
+          <button class="carousel-slide" data-full="screenshots/stats.png" data-alt="Stats and Achievements tab">
+            <img src="screenshots/stats.png" alt="Stats and Achievements tab" loading="lazy">
+          </button>
+        </div>
+        <button class="carousel-arrow prev" id="carousel-prev" aria-label="Previous screenshot">‹</button>
+        <button class="carousel-arrow next" id="carousel-next" aria-label="Next screenshot">›</button>
+        <div class="carousel-caption" id="carousel-caption">Keys &amp; Binds</div>
+      </div>
+      <div class="carousel-dots" id="carousel-dots">
+        <button class="carousel-dot active" data-index="0" aria-label="Go to slide 1"></button>
+        <button class="carousel-dot" data-index="1" aria-label="Go to slide 2"></button>
+        <button class="carousel-dot" data-index="2" aria-label="Go to slide 3"></button>
+        <button class="carousel-dot" data-index="3" aria-label="Go to slide 4"></button>
+        <button class="carousel-dot" data-index="4" aria-label="Go to slide 5"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-started">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Get Started</span>
+        <h2>Live in three steps.</h2>
+        <p>Full per-game setup (mods, GSC files, binds) is in the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool#readme" target="_blank" rel="noopener">README</a>; the tutorial video below walks through it end to end.</p>
+      </div>
+      <div class="start-grid">
+        <ol class="steps">
+          <li>
+            <div>
+              <h4>Download &amp; install</h4>
+              <p>Grab the installer from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>. It sets up paths, copies GSC/binds files to your game folders, and offers a Defender exclusion.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Run Setup &amp; Diagnostics</h4>
+              <p>Auto-detects your install paths, exports binds/GSC with one click, and includes a keypress test tool to confirm everything works.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Go live, then launch</h4>
+              <p>Start your TikTok LIVE first, then hit Launch. Likes, gifts, and <code>!spin</code> start driving the game immediately.</p>
+            </div>
+          </li>
+        </ol>
+        <a class="video-card" href="https://www.youtube.com/watch?v=hDc3MxrjlYg" target="_blank" rel="noopener">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/hDc3MxrjlYg/hqdefault.jpg" alt="Setup tutorial video thumbnail" loading="lazy">
+            <div class="play-btn"><span>▶</span></div>
+          </div>
+          <div class="caption">
+            <span class="label">YouTube · Tutorial</span>
+            <h4>TikTok Interactive Live Tool - BO3 Zombies &amp; Plutonium</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Community &amp; Support</span>
+        <h2>Bugs, questions, and everything else.</h2>
+        <p>Got a bug? Copy the session log from Setup &amp; Diagnostics and post it in <a href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a>. Got a question, an idea, or just want to hang out? Same place - or DM on <a href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">TikTok</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a class="footer-link" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">💬 Discord - RedsHUB</a>
+      <a class="footer-link" href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">🎵 TikTok - @redrum.au</a>
+      <a class="footer-link" href="https://www.youtube.com/watch?v=hDc3MxrjlYg" target="_blank" rel="noopener">▶ YouTube Tutorial</a>
+      <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool" target="_blank" rel="noopener">⌥ GitHub</a>
+      <a class="footer-link" href="https://ko-fi.com/redrumau" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+    </div>
+    <div class="footer-bottom">
+      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.5.1</span> · Built by RedruM</span>
+      <span>Free for personal streaming use - not for resale. See <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/blob/main/LICENSE.txt" target="_blank" rel="noopener">LICENSE</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
