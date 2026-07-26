@@ -143,9 +143,10 @@ a { color: inherit; }
 }
 
 .hero .wrap {
+  max-width: 1560px;
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 48px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
   align-items: center;
 }
 
@@ -219,27 +220,12 @@ a { color: inherit; }
   box-shadow: 0 20px 60px -20px rgba(226, 35, 27, 0.25);
 }
 
-.window-bar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 9px 12px;
-  background: #161616;
-  border-bottom: 1px solid var(--border);
+.hero-image img {
+  transition: opacity 0.3s ease;
 }
 
-.window-bar span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #3a3a3a;
-}
-
-.window-bar .title {
-  margin-left: 8px;
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--text-faint);
+.hero-image img.is-fading {
+  opacity: 0;
 }
 
 /* ---------- scam banner ---------- */
@@ -352,7 +338,13 @@ section { padding: 64px 0; border-bottom: 1px solid var(--border-soft); }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* Fixed-ish column width (not 1fr) so incomplete trailing rows have real
+     leftover space for justify-content to center into — 1fr columns always
+     stretch to fill the full row, which makes centering invisible. Wraps to
+     2 then 1 column on its own as space runs out, no manual breakpoints
+     needed. */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+  justify-content: center;
   gap: 16px;
 }
 
@@ -380,41 +372,104 @@ section { padding: 64px 0; border-bottom: 1px solid var(--border-soft); }
 
 .feature-card p { margin: 0; color: var(--text-dim); font-size: 13.5px; }
 
-/* ---------- gallery ---------- */
+/* ---------- gallery / carousel ---------- */
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-
-.gallery-item {
+.carousel {
+  position: relative;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 6px;
   overflow: hidden;
-  background: var(--bg-panel);
-  cursor: zoom-in;
+  background: #000;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  border: none;
+  background: #000;
   padding: 0;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  object-position: top;
-  opacity: 0.9;
-  transition: opacity 0.15s, transform 0.2s;
-}
-
-.gallery-item:hover img { opacity: 1; transform: scale(1.03); }
-
-.gallery-item span {
+  margin: 0;
+  cursor: zoom-in;
   display: block;
-  padding: 8px 10px;
-  font-size: 12px;
-  color: var(--text-faint);
+  line-height: 0;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: min(70vh, 640px);
+  object-fit: contain;
+  background: #000;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 56px;
+  border: none;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), transparent);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.carousel-arrow.next {
+  right: 0;
+  left: auto;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.55), transparent);
+}
+
+.carousel-arrow.prev { left: 0; }
+
+.carousel-arrow:hover { color: var(--red-bright); }
+
+.carousel-caption {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
   font-family: var(--mono);
-  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 5px 10px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-panel);
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel-dot.active { background: var(--red); border-color: var(--red); }
+
+.carousel-slide:focus-visible,
+.carousel-arrow:focus-visible,
+.carousel-dot:focus-visible {
+  outline: 2px solid var(--red-bright);
+  outline-offset: -2px;
 }
 
 /* ---------- get started ---------- */
@@ -622,8 +677,7 @@ footer { padding: 48px 0 40px; }
   .hero .wrap { grid-template-columns: 1fr; }
   .hero-image { order: -1; }
   .games-grid { grid-template-columns: 1fr; }
-  .features-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .carousel-slide img { height: min(50vh, 420px); }
   .start-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .nav-toggle { display: block; }
@@ -631,8 +685,8 @@ footer { padding: 48px 0 40px; }
 
 @media (max-width: 520px) {
   .hero h1 { font-size: 30px; }
-  .features-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .carousel-slide img { height: 46vh; }
+  .carousel-arrow { width: 40px; font-size: 22px; }
   section { padding: 44px 0; }
   .footer-bottom { flex-direction: column; }
   .brand small { display: none; }
