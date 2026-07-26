@@ -2,6 +2,8 @@
 
 **Version:** 2.5.2 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
+🔗 **Website:** [redrum-au.github.io/RedruMs_Interactive_Zombies_Tool](https://redrum-au.github.io/RedruMs_Interactive_Zombies_Tool/)
+
 ---
 
 ## ❓ What Is This?
@@ -219,6 +221,7 @@ The uninstaller asks whether to keep or remove your settings and stats. GSC and 
 
 | Platform | Link |
 |----------|------|
+| Website | [redrum-au.github.io/RedruMs_Interactive_Zombies_Tool](https://redrum-au.github.io/RedruMs_Interactive_Zombies_Tool/) |
 | Discord | [RedruM's Server](https://discord.gg/VFeZVGtBA7) |
 | TikTok | [@redrum.au](https://tiktok.com/@redrum.au) |
 | Releases | [Latest Release](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) |
