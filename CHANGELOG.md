@@ -2,6 +2,9 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.5.1] — 2026-07-26
+Updated Discord invite link (old one expired). Dashboard polish — wider TikTok username field, bigger Discord/Support buttons, Clear Tracker Metrics moved next to session stats. Removed the TikTok API Health Check tool from Setup & Diagnostics.
+
 ## [2.5.0] — 2026-07-23
 The biggest update yet — live stream overlays, 20 achievements, a new Settings tab, 20 themes, and major stability fixes.
 
