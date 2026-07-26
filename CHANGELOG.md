@@ -2,6 +2,13 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.5.2] — 2026-07-26
+Plutonium (T5/T6) reliability fixes.
+
+**Fixed:** actions bound to Delete/End/Home/Insert/Page Up/Page Down/arrow keys (e.g. Random Weapon) could silently fail to fire; game window now focuses before every T5/T6 action, not just BO3; T5 game detection reliability improved.
+
+Free forever. Report scammers reselling this tool: TikTok DM [@redrum.au](https://tiktok.com/@redrum.au) or the [Discord server](https://discord.gg/VFeZVGtBA7).
+
 ## [2.5.1] — 2026-07-26
 Discord link fix and dashboard polish.
 
