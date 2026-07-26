@@ -5,7 +5,7 @@ All notable changes to RedruM's Interactive Zombies Tool are documented here. Se
 ## [2.5.2] — 2026-07-26
 Plutonium (T5/T6) reliability fixes.
 
-**Fixed:** actions bound to Delete/End/Home/Insert/Page Up/Page Down/arrow keys (e.g. Random Weapon) could silently fail to fire; game window now focuses before every T5/T6 action, not just BO3; T5 game detection reliability improved.
+**Fixed:** actions bound to Delete/End/Home/Insert/Page Up/Page Down/arrow keys (e.g. Random Weapon) could silently fail to fire, game window now focuses before every T5/T6 action instead of just BO3, T5/T6 detection switched to window-title matching for reliability, false "game window not found" log message when focus was already fine, Export Binds button showing the wrong button for the active game, T6 GSC auto-save silently failing to write due to a stale path.
 
 Free forever. Report scammers reselling this tool: TikTok DM [@redrum.au](https://tiktok.com/@redrum.au) or the [Discord server](https://discord.gg/VFeZVGtBA7).
 
