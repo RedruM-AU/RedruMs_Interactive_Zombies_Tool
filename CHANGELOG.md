@@ -3,7 +3,9 @@
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
 ## [2.5.2] — 2026-07-26
-Plutonium (T5/T6) reliability fixes.
+Spotify now-playing overlay and Plutonium (T5/T6) reliability fixes.
+
+**New:** OBS overlay can now include the currently playing Spotify track, read straight from the desktop app's window title — no API keys or extra setup.
 
 **Fixed:** actions bound to Delete/End/Home/Insert/Page Up/Page Down/arrow keys (e.g. Random Weapon) could silently fail to fire, game window now focuses before every T5/T6 action instead of just BO3, T5/T6 detection switched to window-title matching for reliability, false "game window not found" log message when focus was already fine, Export Binds button showing the wrong button for the active game, T6 GSC auto-save silently failing to write due to a stale path.
 
