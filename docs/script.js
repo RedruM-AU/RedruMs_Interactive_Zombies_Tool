@@ -146,11 +146,25 @@
   fetch("https://api.github.com/repos/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest")
     .then(function (res) { return res.ok ? res.json() : null; })
     .then(function (data) {
-      var tag = data && data.tag_name;
-      if (!tag) return;
-      document.querySelectorAll("#hero-version, #footer-version").forEach(function (el) {
-        el.textContent = tag;
-      });
+      if (!data) return;
+
+      if (data.tag_name) {
+        document.querySelectorAll("#hero-version, #footer-version").forEach(function (el) {
+          el.textContent = data.tag_name;
+        });
+      }
+
+      // Point the Download buttons straight at the current release's actual
+      // installer file instead of the releases page - the asset filename
+      // changes every release (it has the version baked in), so this can't
+      // be hardcoded and has to be looked up live. Falls back to linking to
+      // the releases page (already in the HTML) if this fails for any reason.
+      var asset = data.assets && data.assets[0];
+      if (asset && asset.browser_download_url) {
+        document.querySelectorAll(".js-download").forEach(function (el) {
+          el.href = asset.browser_download_url;
+        });
+      }
     })
-    .catch(function () { /* keep the static fallback text */ });
+    .catch(function () { /* keep the static fallback links/text */ });
 })();
