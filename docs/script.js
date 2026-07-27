@@ -14,13 +14,15 @@
     lightboxImg.src = "";
   }
 
-  closeBtn.addEventListener("click", closeLightbox);
-  lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) closeLightbox();
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeLightbox();
-  });
+  if (lightbox && lightboxImg && closeBtn) {
+    closeBtn.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLightbox();
+    });
+  }
 
   // ---- screenshot carousel ----
   var track = document.getElementById("carousel-track");

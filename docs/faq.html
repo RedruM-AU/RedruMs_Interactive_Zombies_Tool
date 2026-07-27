@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ - RedruM's Interactive Zombies Tool</title>
+<meta name="description" content="Frequently asked questions for RedruM's Interactive Zombies Tool - setup, troubleshooting, OBS overlay, privacy, and uninstalling.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="dot"></span>
+      REDRUM'S <small>// Interactive Zombies Tool</small>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#games">Games</a>
+      <a href="index.html#screenshots">Screenshots</a>
+      <a href="index.html#get-started">Get Started</a>
+      <a href="index.html#community">Community</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="index.html">🏠 Home</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <nav class="nav-links-mobile" id="nav-links-mobile">
+    <a href="index.html#features">Features</a>
+    <a href="index.html#games">Games</a>
+    <a href="index.html#screenshots">Screenshots</a>
+    <a href="index.html#get-started">Get Started</a>
+    <a href="index.html#community">Community</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="faq-hero" style="border-bottom:none;">
+    <div class="wrap">
+      <span class="eyebrow">FAQ</span>
+      <h1>Questions, answered.</h1>
+      <p class="lead">Everything about setup, troubleshooting, the OBS overlay, and more. Can't find it here? Ask in <a href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a> or DM on <a href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">TikTok</a>.</p>
+      <a class="btn btn-primary" href="index.html">🏠 Back to Home</a>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="wrap">
+      <span class="tag">READ THIS</span>
+      <p><strong>100% free. Always will be.</strong> If you paid for this, you got scammed. This GitHub repo is the only official distribution source; report resellers via <a href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a> or TikTok DM <a href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">@redrum.au</a>.</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">General</span>
+        <h2>The basics.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is RedruM's Interactive Zombies Tool?</summary>
+          <p>It connects your TikTok LIVE stream directly to Call of Duty Zombies. Viewer likes, gifts, and chat commands trigger real in-game effects while you play.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which games does it support?</summary>
+          <p>Black Ops 3 Zombies (Steam), Black Ops 2 Zombies (Plutonium T6), and Black Ops 1 Zombies (Plutonium T5) - all full support. The app auto-detects which game is running and switches profiles automatically.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is it really free?</summary>
+          <p>Yes, 100% free and always will be. If you paid someone for this, you were scammed - report it via Discord or TikTok DM.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is this the official download?</summary>
+          <p>The only official sources are the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool" target="_blank" rel="noopener">GitHub repo</a>, redrumtools.com, and the linked Discord/TikTok. Nowhere else.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to pay to unlock features?</summary>
+          <p>No - everything is unlocked. Ko-fi donations are optional support, not a paywall.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">How It Works</span>
+        <h2>What viewers actually trigger.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What happens when someone likes my stream?</summary>
+          <p>Every 1,000 likes gives +1,000 in-game points; every 5,000 likes triggers a bonus random spin.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What do gifts do?</summary>
+          <p>Each gift is mapped to an in-game action that fires instantly - fully customizable via the Gift Routing Matrix.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What does !spin do?</summary>
+          <p>A chat command that rolls a weighted random effect from your configured pool. 10-minute cooldown normally, 3 minutes for people who've gifted.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do gifters get anything extra?</summary>
+          <p>Yes - faster !spin cooldown, and their chat messages get read aloud via TTS.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Setup</span>
+        <h2>Getting it running.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What do I need to install for Black Ops 3?</summary>
+          <p>The [ZM] Sphynx' Console Commands mod, and BO3 must be in Windowed (Borderless) mode. Play on a controller since the bot uses your keyboard for commands.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What do I need to install for Plutonium (T5/T6)?</summary>
+          <p>Export and place the GSC script in the correct Plutonium scripts folder, then load the exported binds .cfg in-game via console.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to be the lobby host in Plutonium?</summary>
+          <p>Yes - the GSC script only runs for whoever is hosting the lobby.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does it work in fullscreen?</summary>
+          <p>No - fullscreen blocks keypresses. Use Borderless (Windowed Borderless for BO3, or Borderless Gaming for Plutonium).</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to go live before launching the bot?</summary>
+          <p>Yes - go live on TikTok first, then click Launch.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Troubleshooting</span>
+        <h2>When something's not working.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Keys aren't working in BO3.</summary>
+          <p>Confirm BO3 is Windowed (Borderless) and focused, run the bot as Administrator, confirm the Sphynx mod is active, and re-run <code>/exec binds.cfg</code> in console.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Nothing happens in Plutonium.</summary>
+          <p>Re-run the exec command in console, confirm you're the host, confirm the GSC file is in the right folder (run <code>map_restart</code> after placing it), and make sure you're using Borderless Gaming.</p>
+        </details>
+        <details class="faq-item">
+          <summary>I see !botcmd text on my HUD in Plutonium.</summary>
+          <p>Disable text chat display in Plutonium's in-game settings - the GSC still receives every command regardless.</p>
+        </details>
+        <details class="faq-item">
+          <summary>The bot won't connect to TikTok.</summary>
+          <p>You must be actively LIVE before launching. Double check your TikTok handle on the Dashboard.</p>
+        </details>
+        <details class="faq-item">
+          <summary>There's no TTS voice.</summary>
+          <p>Check the Mute TTS button on the Dashboard, and check volume/voice/TTS toggles in Settings.</p>
+        </details>
+        <details class="faq-item">
+          <summary>I changed a key bind and it's not working.</summary>
+          <p>Save Configuration after changing it in Action Binds, then re-run the exec command in-game again.</p>
+        </details>
+        <details class="faq-item">
+          <summary>I see a Windows Defender / SmartScreen warning.</summary>
+          <p>This is a false positive - the program simulates keyboard input and reads TikTok LIVE data, which trips antivirus heuristics on otherwise-safe software. Click More Info → Run Anyway, or let the installer add a Defender exclusion for you.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">OBS Overlay Setup</span>
+        <h2>Getting stats on stream.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do I turn on the OBS overlay?</summary>
+          <p>Settings tab → OBS Overlay section → tick "Write live stats for OBS." Stats update to text files roughly once a second while it's on.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I actually get the stats into OBS?</summary>
+          <p>In OBS, add a Text (GDI+) Source → tick "Read from file" → browse to the overlay folder and pick the stat file you want (e.g. likes.txt, gifts.txt, top_gifter.txt). Each stat is its own file, so add a separate Text source per stat you want on screen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where do I find the overlay files?</summary>
+          <p>Settings → OBS Overlay → "Open Overlay Folder" button opens it directly. It lives at <code>%APPDATA%\BO3TikTokBot\overlay\</code>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What stats are available?</summary>
+          <p>Likes, viewers, gifts, coins, spins, follows, uptime, likes-per-minute, bonus-spin progress, last gift, last spin, last follower, top gifter, a rolling recent-chat feed, live status, and (optionally) Spotify now-playing - each as its own .txt file.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I show what song I'm playing on stream?</summary>
+          <p>Yes - tick "Include Spotify now-playing" underneath the main OBS overlay checkbox (requires the main "Write live stats for OBS" toggle to be on too). It reads the track info straight from the Spotify desktop app's window title - no login, API key, or extra setup needed. Spotify just needs to be open and playing on the same PC.</p>
+        </details>
+        <details class="faq-item">
+          <summary>My OBS text source isn't updating.</summary>
+          <p>Confirm "Write live stats for OBS" is ticked in Settings, confirm the Text source in OBS has "Read from file" enabled and is pointed at the correct file in the overlay folder, and confirm the bot is actually running/live (files only update while a session is active).</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Privacy &amp; Safety</span>
+        <h2>What it does and doesn't touch.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Does this read my TikTok login or password?</summary>
+          <p>No - it only reads public TikTok LIVE event data (likes, gifts, follows, chat). No login/credentials required.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does it modify my game files permanently?</summary>
+          <p>No - it only adds a keybind config and (for Plutonium) a GSC script, both of which you can remove manually. No core game files are touched.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Uninstalling</span>
+        <h2>If you ever want to leave.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do I uninstall?</summary>
+          <p>Settings → Apps → RedruM's Interactive Zombies Tool → Uninstall. You'll be asked whether to keep your settings/stats. GSC and cfg files in your game folders stay unless you delete them manually.</p>
+        </details>
+        <details class="faq-item">
+          <summary>If I reinstall, do I lose my settings?</summary>
+          <p>Not if you chose to keep them during uninstall - config is preserved and versions carry it forward automatically.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a class="footer-link" href="index.html">🏠 Home</a>
+      <a class="footer-link" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">💬 Discord - RedsHUB</a>
+      <a class="footer-link" href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">🎵 TikTok - @redrum.au</a>
+      <a class="footer-link" href="https://www.youtube.com/watch?v=hDc3MxrjlYg" target="_blank" rel="noopener">▶ YouTube Tutorial</a>
+      <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool" target="_blank" rel="noopener">⌥ GitHub</a>
+      <a class="footer-link" href="https://ko-fi.com/redrumau" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+    </div>
+    <div class="footer-bottom">
+      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.5.2</span> · Built by RedruM</span>
+      <span>Free for personal streaming use - not for resale. See <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/blob/main/LICENSE.txt" target="_blank" rel="noopener">LICENSE</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
