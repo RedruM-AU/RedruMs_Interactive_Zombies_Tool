@@ -2,6 +2,15 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.5.3] — 2026-07-27
+The official website is live at [redrumtools.com](https://redrumtools.com/) — download links, feature breakdown, screenshots, and setup steps for all three games in one place, replacing the old Linktree. A Website button has been added to the Dashboard alongside Discord and Support the Developer.
+
+**New:** Website button on the Dashboard, linking to [redrumtools.com](https://redrumtools.com/).
+
+**Fixed:** launching the app while it's already running (even minimized to the system tray) now brings the existing window to the front instead of showing an "already running" popup.
+
+Free forever. Report scammers reselling this tool: TikTok DM [@redrum.au](https://tiktok.com/@redrum.au) or the [Discord server](https://discord.gg/VFeZVGtBA7).
+
 ## [2.5.2] — 2026-07-26
 Spotify now-playing overlay and Plutonium (T5/T6) reliability fixes.
 
