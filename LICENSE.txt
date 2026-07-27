@@ -58,7 +58,7 @@ from use with third-party games or platforms.
 =========================================================
 CONTACT & OFFICIAL DISTRIBUTION
 =========================================================
-Website:  redrum-au.github.io/RedruMs_Interactive_Zombies_Tool
+Website:  redrumtools.com
 
 TikTok:   @redrum.au
           tiktok.com/@redrum.au
