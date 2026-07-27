@@ -671,6 +671,42 @@ footer { padding: 48px 0 40px; }
   font-size: 14px;
 }
 
+/* ---------- 404 page ---------- */
+
+.notfound {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.notfound .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notfound-code {
+  font-family: var(--mono);
+  font-size: 90px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+  text-shadow: 0 0 40px rgba(226, 35, 27, 0.35);
+}
+
+.notfound h1 {
+  font-size: 30px;
+  margin: 16px 0 12px;
+}
+
+.notfound p.lead {
+  color: var(--text-dim);
+  font-size: 16px;
+  max-width: 50ch;
+  margin: 0 0 28px;
+}
+
+.notfound .hero-cta { justify-content: center; }
+
 /* ---------- FAQ page ---------- */
 
 .faq-hero {
