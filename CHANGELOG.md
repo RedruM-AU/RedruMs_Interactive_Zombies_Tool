@@ -2,6 +2,13 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.5.4] — 2026-07-30
+**New:** the on-launch "LOADED" in-game message is now a centered, two-line HUD banner (title + "LOADED - redrumtools.com") instead of the old top-of-screen text, and no longer shows a version number. Tooltips now clamp correctly to whichever monitor the cursor is actually on, instead of only ever using the primary monitor's bounds. Added per-section "Reset Section" buttons for Action Binds, Wheel Spin Pool, and Gift Routing Matrix, so each can be reset independently without touching the other two.
+
+**Changed:** the first-launch scam-warning popup now points to [redrumtools.com](https://redrumtools.com/) instead of the GitHub repo, and mentions reporting scammers via the Discord server as well as TikTok DM.
+
+**Fixed:** the installer's BO3 directory checkbox no longer defaults to checked with a guessed path — it now auto-detects BO3 the same way the T5/T6 pages already did, so users who only use Plutonium no longer hit a "folder not found" prompt during setup.
+
 ## [2.5.3] — 2026-07-27
 The official website is live at [redrumtools.com](https://redrumtools.com/) — download links, feature breakdown, screenshots, and setup steps for all three games in one place, replacing the old Linktree. A Website button has been added to the Dashboard alongside Discord and Support the Developer.
 
