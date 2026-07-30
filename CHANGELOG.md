@@ -7,7 +7,7 @@ All notable changes to RedruM's Interactive Zombies Tool are documented here. Se
 
 **Changed:** the first-launch scam-warning popup now points to [redrumtools.com](https://redrumtools.com/) instead of the GitHub repo, and mentions reporting scammers via the Discord server as well as TikTok DM.
 
-**Fixed:** the installer's BO3 directory checkbox no longer defaults to checked with a guessed path — it now auto-detects BO3 the same way the T5/T6 pages already did, so users who only use Plutonium no longer hit a "folder not found" prompt during setup.
+**Fixed:** the installer's BO3 directory checkbox no longer defaults to checked with a guessed path — it now auto-detects BO3 the same way the T5/T6 pages already did, so users who only use Plutonium no longer hit a "folder not found" prompt during setup. The installer now also overwrites the live GSC file in Plutonium's scripts folder on every install instead of only the first — previously, updating over an existing install left the old GSC in place until manually re-exported from Setup & Diagnostics.
 
 ## [2.5.3] — 2026-07-27
 The official website is live at [redrumtools.com](https://redrumtools.com/) — download links, feature breakdown, screenshots, and setup steps for all three games in one place, replacing the old Linktree. A Website button has been added to the Dashboard alongside Discord and Support the Developer.
