@@ -805,4 +805,5 @@ footer { padding: 48px 0 40px; }
   .brand small { display: none; }
   .nav-cta { gap: 8px; }
   .topbar .wrap { padding: 0 16px; }
+  .nav-discord { display: none; }
 }
