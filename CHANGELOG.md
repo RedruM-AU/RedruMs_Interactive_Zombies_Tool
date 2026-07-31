@@ -2,6 +2,11 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.5.5] — 2026-07-31
+**Fixed:** rebinding an action to a new key no longer leaves the old key still bound in-game alongside it — both the BO3 and Plutonium (T5/T6) exported `.cfg` files now correctly unbind keys you've moved away from, instead of only unbinding a fixed list of keys from old app versions. The `=` key wasn't reliably registering as a keypress in Plutonium for some users (affecting the T5 default "3rd Person 15s" bind and anyone using `=` for Wheel Spin) — sent via a more reliable input method now, matching the fix already in place for the navigation-cluster keys. Fixed the Give All Perks / Take All Perks icons piling up on screen on T5 (BO1) when used repeatedly — already fixed on T6 (BO2), now applied to T5 too.
+
+**Changed:** Action Binds names for T5/T6 (BO1/BO2) are now locked — only the key can be changed, and the "Add Action" button is disabled for those games. Action commands are hardcoded into the GSC script for BO1/BO2, so renaming or adding a row never actually did anything except look like it should; this was a source of recurring confusion in the Discord.
+
 ## [2.5.4] — 2026-07-30
 **New:** the on-launch "LOADED" in-game message is now a centered, two-line HUD banner (title + "LOADED - redrumtools.com") instead of the old top-of-screen text, and no longer shows a version number. Tooltips now clamp correctly to whichever monitor the cursor is actually on, instead of only ever using the primary monitor's bounds. Added per-section "Reset Section" buttons for Action Binds, Wheel Spin Pool, and Gift Routing Matrix, so each can be reset independently without touching the other two.
 
