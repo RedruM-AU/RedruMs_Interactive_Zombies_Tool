@@ -2,6 +2,11 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.6.1] — 2026-08-07
+**New:** A first-launch guided tour walks new users through the app, highlighting the Dashboard, Keys & Binds, Settings, Setup & Diagnostics, and Stats tabs with short descriptions and Next/Back/Skip controls. It shows automatically the first time you launch, and can be replayed anytime with the new Show Tutorial button on the Credits & Info tab.
+
+**Fixed:** closing the "this is a free program" welcome popup using the window's X button instead of the "Got it" button used to skip saving your "Don't show this again" choice, so it could keep popping up on future launches even after you'd already dismissed it. Now works the same way regardless of how you close it.
+
 ## [2.6.0] — 2026-08-07
 **New:** BO2 (T6) has three new actions: Give One Perk, which randomly gives you a perk you don't already have, plus Round 50 and Round 100 for jumping straight to a specific round. BO2's Powerup Rain now drops twice as many powerups (20 instead of 10) over a longer window. The in-game "LOADED" banner stays on screen longer, the website link now gets its own animated row instead of sharing a line with "LOADED", and "LOADED" now flashes white and green.
 

@@ -1,6 +1,6 @@
 RedruM's Interactive Zombies Tool
 Copyright © 2026 RedruM (@redrum.au)
-Version 2.6.0
+Version 2.6.1
 =========================================================
 LICENSE AGREEMENT & TERMS OF USE
 =========================================================
