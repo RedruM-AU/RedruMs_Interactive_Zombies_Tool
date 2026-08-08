@@ -2,6 +2,11 @@
 
 All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
 
+## [2.6.2] — 2026-08-08
+**New:** BO2 (T6) Give All Perks and Take All Perks now include Electric Cherry and Vulture-Aid, map-aware so they only show up on the maps that actually have them (Electric Cherry on Origins, Mob of the Dead and Tranzit Diner, Vulture-Aid on Buried). A Save button has been added directly to the Settings tab. The guided tour now opens with a short intro explaining what the app actually does before walking through the tabs, the Dashboard steps now follow the order you'd actually set things up in (username, game profile, launch button, then status), and two new steps cover Audio & TTS and the Events toggles in Settings.
+
+**Fixed:** the Save confirmation popup now shows the actual file path your binds and GSC files were written to, not just the filename, for BO3, BO2, and BO1 alike. Previously it just said "updated" without saying where, which was the single biggest cause of "my binds aren't working" reports, and BO1's popup didn't even mention its GSC file at all.
+
 ## [2.6.1] — 2026-08-07
 **New:** A first-launch guided tour walks new users through the app, highlighting the Dashboard, Keys & Binds, Settings, Setup & Diagnostics, and Stats tabs with short descriptions and Next/Back/Skip controls. It shows automatically the first time you launch, and can be replayed anytime with the new Show Tutorial button on the Credits & Info tab.
 

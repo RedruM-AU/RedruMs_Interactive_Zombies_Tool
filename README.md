@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version:** 2.6.1 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
+**Version:** 2.6.2 &nbsp;|&nbsp; **Developer:** RedruM &nbsp;|&nbsp; **Free & Open Access**
 
 🔗 **Website:** [redrumtools.com](https://redrumtools.com/)
 
