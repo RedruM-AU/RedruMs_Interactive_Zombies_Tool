@@ -1,6 +1,104 @@
 # Changelog
 
-All notable changes to RedruM's Interactive Zombies Tool are documented here. See [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases) for full download links.
+Community patch notes for RedruM's Interactive Zombies Tool.
+
+## [2.8.0]
+
+### Desktop and dashboard
+
+- Rebuilt the Windows desktop app in Qt with refreshed Live, Setup, Actions & Gifts, Settings, Diagnostics, Stats and Help pages.
+- Added a sidebar, compact icon navigation and top tabs. Layout, text size, window position and theme persist between launches.
+- Preserved the 22 existing palettes and custom accents. Grouped themes by colour and style, refreshed the dark colour palettes, and added RedruM, Aether, Afterglow, Deep Sea, Midnight Blue, Aurora, Copper Dusk and Glacier gradients.
+- Added English, Spanish and Brazilian Portuguese for the main controls and guided tour.
+- Added a replayable first-launch spotlight tour, contextual tooltips and shortcuts to setup, support and update checks.
+- Put Game next to Navigation and Theme. A live indicator shows when the selected game window or a different supported game is detected.
+- Moved the TikTok username and connection controls onto Live. The username syncs with Settings and saves when connecting.
+- Added a dedicated right-hand chat panel that moves into a tab in narrow windows and retains chat history while resizing.
+- Reorganized activity, recent gifts, top gifters, recent spins, cooldowns, live counts, bonus spin progress and queue status.
+- Added Website, Discord and Ko-fi links on Live. The optional tray menu can reopen the app, control the connection, mute speech or exit.
+- Added `Ctrl+S` for Settings, Actions & Gifts and Setup, and compacted tables, spacing and empty states.
+
+### Actions, gifts and testing
+
+- Split Keybinds, Gift mappings and Spin wheel into separate per-game tabs with clearer editing controls and reset options.
+- Added key capture and duplicate-key checks, including aliases. Setup compares the profile against exported and installed binds.
+- Added a searchable gift catalog, import and refresh controls, gift IDs and aliases, and an option to map unmatched gifts from Live.
+- Added action pickers for mappings and rewards. Custom console actions are available on BO3, and BO1 and BO2 list their built-in actions.
+- The spin editor displays base desktop odds and identifies entries without an eligible bind.
+- Manual Override accepts `!spin`, a mapped gift, an action name or a raw key. Setup can test Max Ammo, and the editors can test a selected bind or gift mapping.
+- Demo runs sample events through the current profile. It can send game input after a three-second delay when enabled. Demo activity stays out of saved sessions and achievements.
+- Game input starts enabled. Turn it off to preview or monitor events without sending keys to the game.
+- Reworked action routing for gifts, follows, likes, chat spins and bonus spins, including gift streaks, caps, Plutonium batches and timed effect cleanup.
+- The Windows sender checks the game window and process before sending keys. Optional autofocus can bring the selected game forward.
+- Fixed detection and key delivery for BO3 Steam windows titled Call of Duty - ship.
+- BO3 can use Wheel Spin as a follow or like reward using its configured spin effects.
+- Live can monitor TikTok with game input off. Clearing dashboard totals leaves session history and reward progress intact.
+- Gameplay settings group follow and like rewards, bonus spins, gifter and viewer cooldowns, batching, and effect timing.
+
+### Setup, settings and records
+
+- Setup discovers Steam and Plutonium folders and provides the right console command for each game.
+- Saving a profile updates the app's configuration. Use **Install game files** in Setup to apply bind or script changes in-game.
+- Save folders, Export game files and Install game files now confirm the result. Wrong destinations are highlighted with a warning before saving or installing.
+- Game file installation keeps a backup of existing binds and scripts. On launch, the app offers updates for missing or outdated files in saved game folders and skips games that are running.
+- The installer packages the new app. Compatible 2.7.0 settings, profiles, presets, stats and achievements carry over on first launch.
+- Settings includes preset save/load, legacy imports, ZIP backup and restore, and recovery snapshots before a restore.
+- TTS settings include voice, speed, volume, mute, a voice test and optional callouts for likes, gift streaks and session milestones.
+- OBS text-file output includes an optional Spotify track display and a copyable output folder path.
+- OBS text files now live in `%APPDATA%\RedruMTools\Desktop\overlay`. Existing OBS sources need to point to the new folder. Uptime and likes per minute are available in OBS text output.
+- Stats includes session history, personal bests, all 20 achievements, JSON import/export and separate resets with recovery copies.
+- Session summaries now appear in Live activity. Stats focuses on saved sessions, personal bests and achievements. The separate lifetime totals and lifetime top-gifters views from 2.7.0 are absent in 2.8.0.
+- Diagnostics can copy a report with account names and paths omitted, or copy and save a session activity log.
+
+### BO1 and BO2 Zombies
+
+- Added a persistent dark red zombie counter and small translucent Redrumtools.com watermark.
+- HUD position and colour can be set in Appearance, with matching options in the host-only `say !redrumhud` menu for the current match.
+- BO2 Round 50 and Round 100 now add that number of rounds on every trigger, including back-to-back requests.
+
+
+## [2.7.0] — 2026-11-11
+
+## ⚠️ Updating?
+
+Close the tool and run the installer over your existing copy. Your settings, binds, presets and stats carry over. The first launch backs up your saved data.
+
+## ✨ New
+
+- **Clear Pending Actions** cancels queued work.
+- The Dashboard shows waiting actions, keypresses and gift batches.
+- Hover tips explain the live controls, gift status and Demo Mode.
+- Two new themes in Settings, **Slate Teal** and **Ember**.
+
+## 🎨 Improved
+
+- Cleaner Dashboard with clearer **Start Live** and **Stop Live** controls.
+- Better handling of busy gift bursts, queued speech and timed effects.
+- Settings backups include nested presets. Uninstalling keeps saved data.
+
+## 🛠️ Fixed
+
+- Total Likes now updates with bonus spins turned off. The progress bar shows when bonus spins are off.
+- Old keys could still trigger bot actions after you changed or removed a bind.
+- Reconnecting could replay old `!spin` commands and cooldown announcements.
+- Some gifts could be missed or counted incorrectly during streaks.
+- Temporary effects could reset early or fail to reset when the bot stopped.
+- BO1 and BO2 third-person mode could trigger again when its timer ended.
+- BO1's Random Weapon Upgraded bind could do nothing.
+- BO1 and BO2 could restore default wheel effects when every effect was disabled.
+- Save now tells you which game files could not be updated.
+
+After updating, save your configuration and reload your binds in game. If you updated a BO1 or BO2 GSC script, restart the map.
+
+| Game | Console command |
+|---|---|
+| BO3 | `/exec binds.cfg` |
+| BO2 | `exec bot_binds.cfg` |
+| BO1 | `exec pluto_t5_binds.cfg` |
+
+Free forever. Report issues in [Discord](https://discord.gg/VFeZVGtBA7) or DM [@redrum.au](https://tiktok.com/@redrum.au).
+
+---
 
 ## [2.6.2] — 2026-08-08
 **New:** BO2 (T6) Give All Perks and Take All Perks now include Electric Cherry and Vulture-Aid, map-aware so they only show up on the maps that actually have them (Electric Cherry on Origins, Mob of the Dead and Tranzit Diner, Vulture-Aid on Buried). A Save button has been added directly to the Settings tab. The guided tour now opens with a short intro explaining what the app actually does before walking through the tabs, the Dashboard steps now follow the order you'd actually set things up in (username, game profile, launch button, then status), and two new steps cover Audio & TTS and the Events toggles in Settings.
@@ -112,4 +210,4 @@ Complete keybind system redesign with auto-write on save. Update checker, settin
 Major platform expansion — added T6 (BO2 Plutonium) and T5 (BO1 Plutonium) as full game profiles. Introduced the Action Bind Architecture: one Action Binds panel driving the spin wheel, gift matrix, and cfg export. Installer path collection, keybind drift detector.
 
 ## [1.0.1] — 2026-05-28
-First public release. Black Ops 3 only. TikTok LIVE integration, gift routing, `!spin` command, weighted chaos wheel, TTS, gifter chat reading, like-based rewards, auto-reconnect, cooldown management, `binds.cfg` exporter.
+First public release. Black Ops 3 only. TikTok LIVE integration, gift routing, `!spin` command, weighted chaos wheel, T
