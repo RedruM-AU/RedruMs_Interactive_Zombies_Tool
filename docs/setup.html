@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Setup - RedruM's Interactive Zombies Tool</title>
+<meta name="description" content="Set up RedruM's Interactive Zombies Tool for BO3 Steam, BO2 Plutonium T6, or BO1 Plutonium T5. Copy your bind command and test Max Ammo before going live.">
+<link rel="canonical" href="https://redrumtools.com/setup.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://redrumtools.com/setup.html">
+<meta property="og:title" content="Game Setup - RedruM's Interactive Zombies Tool">
+<meta property="og:description" content="Install the game files, load your binds, and test Max Ammo before connecting to TikTok.">
+<meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.0/setup.png">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="920">
+<meta property="og:image:alt" content="Game Setup in the RedruM theme">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .setup-flow { padding-top: 0; }
+  .setup-flow .wrap { max-width: 960px; }
+  .setup-panel { margin-top: 20px; scroll-margin-top: 90px; }
+  .setup-panel h2 { margin: 0 0 12px; font-size: 22px; }
+  .setup-panel p, .setup-panel ol { color: var(--text-dim); }
+  .setup-panel ol { padding-left: 22px; }
+  .setup-panel li + li { margin-top: 8px; }
+  .setup-command {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg);
+  }
+  .setup-command code { color: var(--text); font-family: var(--mono); overflow-wrap: anywhere; }
+  .setup-command [hidden] { display: none; }
+  .setup-panel .copy-status { min-height: 1.5em; margin: 4px 0 0; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="dot"></span>
+      REDRUM'S <small>// Interactive Zombies Tool</small>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/setup.html" aria-current="page">Setup</a>
+      <a href="/faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">Download</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links-mobile">☰</button>
+    </div>
+  </div>
+  <nav class="nav-links-mobile" id="nav-links-mobile" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/setup.html" aria-current="page">Setup</a>
+    <a href="/faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+  <section class="faq-hero">
+    <div class="wrap">
+      <h1>Set up your Zombies game</h1>
+      <p class="lead">Install the game files, load your binds, and test an action before connecting to TikTok.</p>
+      <nav class="hero-cta" aria-label="Choose your game">
+        <a class="btn btn-outline" href="#bo3">BO3 Steam</a>
+        <a class="btn btn-outline" href="#bo2">BO2 Plutonium T6</a>
+        <a class="btn btn-outline" href="#bo1">BO1 Plutonium T5</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="setup-flow" aria-label="Setup instructions">
+    <div class="wrap">
+      <article class="game-card setup-panel" id="install">
+        <h2>Install the game files</h2>
+        <ol>
+          <li>Download Windows Setup from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>, then run the installer. If you downloaded the ZIP, extract it first. Open the app under your normal Windows account.</li>
+          <li>Open the tool, select your game profile, and open <strong>Setup</strong>.</li>
+          <li>Select <strong>Find game folders</strong>, check the paths, and select <strong>Install game files</strong>. If the folders aren’t found, select them with <strong>Browse</strong>.</li>
+        </ol>
+      </article>
+
+      <article class="game-card setup-panel" id="bo3">
+        <h2>Black Ops 3 Zombies <span class="platform">Steam</span></h2>
+        <p><a href="#install">Install the game files</a>, load <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766" target="_blank" rel="noopener">Sphynx Console Commands v1.0.6</a>, and start a Zombies match in windowed or borderless mode.</p>
+        <p>Open the console with the console key, usually below Esc (tilde on US keyboards). Run this command and close the console.</p>
+        <div class="setup-command">
+          <code id="command-bo3">/exec binds.cfg</code>
+          <button type="button" class="btn btn-outline btn-sm" data-copy-command="command-bo3" aria-label="Copy BO3 Steam command" hidden>Copy command</button>
+        </div>
+        <p class="copy-status" role="status"></p>
+        <a href="#test">Test Max Ammo</a>
+      </article>
+
+      <article class="game-card setup-panel" id="bo2">
+        <h2>Black Ops 2 Zombies <span class="platform">Plutonium T6</span></h2>
+        <p><a href="#install">Install the BO2 binds and script</a>, then host a fresh Zombies match in windowed or borderless mode.</p>
+        <p>Press the key below Esc to open the console. Run this command and close the console.</p>
+        <div class="setup-command">
+          <code id="command-bo2">exec bot_binds.cfg</code>
+          <button type="button" class="btn btn-outline btn-sm" data-copy-command="command-bo2" aria-label="Copy BO2 Plutonium command" hidden>Copy command</button>
+        </div>
+        <p class="copy-status" role="status"></p>
+        <a href="#test">Test Max Ammo</a>
+      </article>
+
+      <article class="game-card setup-panel" id="bo1">
+        <h2>Black Ops 1 Zombies <span class="platform">Plutonium T5</span></h2>
+        <p><a href="#install">Install the BO1 binds and script</a>, then host a fresh Zombies match in windowed or borderless mode.</p>
+        <p>Press the key below Esc to open the console. Run this command and close the console.</p>
+        <div class="setup-command">
+          <code id="command-bo1">exec pluto_t5_binds.cfg</code>
+          <button type="button" class="btn btn-outline btn-sm" data-copy-command="command-bo1" aria-label="Copy BO1 Plutonium command" hidden>Copy command</button>
+        </div>
+        <p class="copy-status" role="status"></p>
+        <a href="#test">Test Max Ammo</a>
+      </article>
+
+      <article class="game-card setup-panel" id="test">
+        <h2>Test an action and go live</h2>
+        <ol>
+          <li>With game input enabled, select <strong>Test Max Ammo bind</strong> in Setup and return to your match within three seconds.</li>
+          <li>Look for an ammo refill or a Max Ammo message. If nothing happens, check that Setup detects the selected game, run the bind command again, and close the console before testing.</li>
+          <li>Once the test works, you can tick <strong>I saw Max Ammo in the game</strong>. Select <strong>Next: Connect to TikTok</strong> to open Live.</li>
+          <li>Start your TikTok LIVE, enter your username in the tool, and select <strong>Connect to TikTok</strong>.</li>
+        </ol>
+        <p>Still stuck? Check the <a href="/faq#troubleshooting">troubleshooting FAQ</a> or open <strong>Diagnostics → Copy diagnostics</strong> and share the result in <a href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a>.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a class="footer-link" href="/">Home</a>
+      <a class="footer-link" href="/faq">FAQ</a>
+      <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">What's new</a>
+      <a class="footer-link" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <div class="footer-bottom">
+      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.8.1</span> · Built by RedruM</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

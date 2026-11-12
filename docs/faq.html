@@ -13,8 +13,8 @@
 <meta property="og:title" content="FAQ - RedruM's Interactive Zombies Tool">
 <meta property="og:description" content="Frequently asked questions for RedruM's Interactive Zombies Tool - setup, troubleshooting, OBS overlay, privacy, and uninstalling.">
 <meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.0/dashboard.png">
-<meta property="og:image:width" content="1920">
-<meta property="og:image:height" content="1032">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="920">
 <meta property="og:image:alt" content="RedruM's Interactive Zombies Tool dashboard">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -33,28 +33,20 @@
       <span class="dot"></span>
       REDRUM'S <small>// Interactive Zombies Tool</small>
     </a>
-    <nav class="nav-links">
-      <a href="/#features">Features</a>
-      <a href="/#games">Games</a>
-      <a href="/#screenshots">Screenshots</a>
-      <a href="/#get-started">Get Started</a>
-      <a href="/#community">Community</a>
-      <a href="faq">FAQ</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/setup.html">Setup</a>
+      <a href="/faq" aria-current="page">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-discord btn-sm nav-discord" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">💬 Discord</a>
-      <a class="btn btn-outline btn-sm" href="/">🏠 Home</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <a class="btn btn-primary btn-sm" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">Download</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links-mobile">☰</button>
     </div>
   </div>
-  <nav class="nav-links-mobile" id="nav-links-mobile">
-    <a href="/#features">Features</a>
-    <a href="/#games">Games</a>
-    <a href="/#screenshots">Screenshots</a>
-    <a href="/#get-started">Get Started</a>
-    <a href="/#community">Community</a>
-    <a href="faq">FAQ</a>
-    <a href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">💬 Discord</a>
+  <nav class="nav-links-mobile" id="nav-links-mobile" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/setup.html">Setup</a>
+    <a href="/faq" aria-current="page">FAQ</a>
   </nav>
 </header>
 
@@ -139,6 +131,7 @@
       <div class="section-head">
         <span class="kicker">Setup</span>
         <h2>Getting it running.</h2>
+        <p>Start with the <a href="/setup.html">game setup guide</a> for your game's console command and Max Ammo test.</p>
       </div>
       <div class="faq-list">
         <details class="faq-item">
@@ -165,7 +158,7 @@
     </div>
   </section>
 
-  <section class="faq-section">
+  <section class="faq-section" id="troubleshooting">
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">Troubleshooting</span>
@@ -198,7 +191,7 @@
         </details>
         <details class="faq-item">
           <summary>I see a Windows Defender / SmartScreen warning.</summary>
-          <p>The installer is unsigned, so Windows may show a SmartScreen warning. Download from the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">official GitHub release</a> and compare the ZIP's SHA-256 with the release notes. Keep Microsoft Defender enabled.</p>
+          <p>The installer is unsigned, so Windows may show a SmartScreen warning. Download from the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">official GitHub release</a> and compare your download's SHA-256 with the release notes. Keep Microsoft Defender enabled.</p>
         </details>
       </div>
     </div>
@@ -285,12 +278,12 @@
       <a class="footer-link" href="/">🏠 Home</a>
       <a class="footer-link" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">💬 Discord - RedsHUB</a>
       <a class="footer-link" href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">🎵 TikTok - @redrum.au</a>
-      <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool#game-setup" target="_blank" rel="noopener">Setup guide</a>
+      <a class="footer-link" href="/setup.html">Setup guide</a>
       <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool" target="_blank" rel="noopener">⌥ GitHub</a>
       <a class="footer-link" href="https://ko-fi.com/redrumau" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
     </div>
     <div class="footer-bottom">
-      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.8.0</span> · Built by RedruM</span>
+      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.8.1</span> · Built by RedruM</span>
       <span>Free for personal streaming use - not for resale. See <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/blob/main/LICENSE.txt" target="_blank" rel="noopener">LICENSE</a>.</span>
     </div>
   </div>

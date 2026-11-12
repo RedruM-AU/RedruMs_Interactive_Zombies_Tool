@@ -133,9 +133,24 @@
     });
   });
 
+  document.querySelectorAll("[data-copy-command]").forEach(function (button) {
+    if (!navigator.clipboard || !navigator.clipboard.writeText) return;
+    var command = document.getElementById(button.getAttribute("data-copy-command"));
+    var status = button.closest(".setup-panel").querySelector(".copy-status");
+    button.hidden = false;
+    button.addEventListener("click", async function () {
+      try {
+        await navigator.clipboard.writeText(command.textContent.trim());
+        status.textContent = "Command copied.";
+      } catch (_) {
+        status.textContent = "Select the command text and copy it manually.";
+      }
+    });
+  });
+
   // Pull the current version from GitHub's latest release instead of relying
   // on the hardcoded fallback text staying in sync by hand. Fails silently —
-  // if the API is unreachable or rate-limited, the hardcoded "v2.8.0" text
+  // if the API is unreachable or rate-limited, the hardcoded "v2.8.1" text
   // already in the HTML just stays as-is rather than showing an error.
   fetch("https://api.github.com/repos/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest")
     .then(function (res) { return res.ok ? res.json() : null; })
