@@ -2,7 +2,9 @@
 
 Community patch notes for RedruM's Interactive Zombies Tool.
 
-## [2.8.0]
+## [2.8.0] - 2026-11-12
+
+Refreshed 13 November 2026 with the updated installer, Setup flow and Live controls.
 
 ### Interface refresh
 
