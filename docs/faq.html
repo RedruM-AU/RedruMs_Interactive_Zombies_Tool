@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://redrumtools.com/faq">
 <meta property="og:title" content="FAQ - RedruM's Interactive Zombies Tool">
 <meta property="og:description" content="Frequently asked questions for RedruM's Interactive Zombies Tool - setup, troubleshooting, OBS overlay, privacy, and uninstalling.">
-<meta property="og:image" content="https://redrumtools.com/screenshots/dashboard.png">
+<meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.0/dashboard.png">
 <meta property="og:image:width" content="1920">
 <meta property="og:image:height" content="1032">
 <meta property="og:image:alt" content="RedruM's Interactive Zombies Tool dashboard">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="FAQ - RedruM's Interactive Zombies Tool">
 <meta name="twitter:description" content="Frequently asked questions for RedruM's Interactive Zombies Tool - setup, troubleshooting, OBS overlay, privacy, and uninstalling.">
-<meta name="twitter:image" content="https://redrumtools.com/screenshots/dashboard.png">
+<meta name="twitter:image" content="https://redrumtools.com/screenshots/website-v2.8.0/dashboard.png">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
@@ -89,7 +89,7 @@
         </details>
         <details class="faq-item">
           <summary>Which games does it support?</summary>
-          <p>Black Ops 3 Zombies (Steam), Black Ops 2 Zombies (Plutonium T6), and Black Ops 1 Zombies (Plutonium T5) - all full support. The app auto-detects which game is running and switches profiles automatically.</p>
+          <p>Black Ops 3 Zombies on Steam, Black Ops 2 Zombies on Plutonium T6, and Black Ops 1 Zombies on Plutonium T5. Choose the matching game profile. The app shows whether it detects the selected game window.</p>
         </details>
         <details class="faq-item">
           <summary>Is it really free?</summary>
@@ -97,7 +97,7 @@
         </details>
         <details class="faq-item">
           <summary>Is this the official download?</summary>
-          <p>The only official sources are the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool" target="_blank" rel="noopener">GitHub repo</a>, redrumtools.com, and the linked Discord/TikTok. Nowhere else.</p>
+          <p>Download the Windows ZIP from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>. The official site and community links point to that download.</p>
         </details>
         <details class="faq-item">
           <summary>Do I need to pay to unlock features?</summary>
@@ -116,19 +116,19 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>What happens when someone likes my stream?</summary>
-          <p>Every 1,000 likes gives +1,000 in-game points; every 5,000 likes triggers a bonus random spin.</p>
+          <p>You can configure points and bonus spins at your chosen like thresholds under <strong>Settings → Gameplay</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>What do gifts do?</summary>
-          <p>Each gift is mapped to an in-game action that fires instantly - fully customizable via the Gift Routing Matrix.</p>
+          <p>Mapped gifts trigger the game action you assign under <strong>Actions &amp; Gifts → Gift mappings</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>What does !spin do?</summary>
-          <p>A chat command that rolls a weighted random effect from your configured pool. 10-minute cooldown normally, 3 minutes for people who've gifted.</p>
+          <p>It rolls a weighted effect from your configured wheel. You can adjust the normal and gifter cooldowns in <strong>Settings → Gameplay</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>Do gifters get anything extra?</summary>
-          <p>Yes - faster !spin cooldown, and their chat messages get read aloud via TTS.</p>
+          <p>You can give gifters a shorter spin cooldown and enable voice callouts in the app settings.</p>
         </details>
       </div>
     </div>
@@ -143,11 +143,11 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>What do I need to install for Black Ops 3?</summary>
-          <p>The [ZM] Sphynx' Console Commands mod, and BO3 must be in Windowed (Borderless) mode. Play on a controller since the bot uses your keyboard for commands.</p>
+          <p>Load <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766" target="_blank" rel="noopener">Sphynx Console Commands v1.0.6</a> and use Windowed (Borderless) mode. The app sends keyboard binds. If you play with keyboard and mouse, choose action keys that do not overlap your game controls.</p>
         </details>
         <details class="faq-item">
           <summary>What do I need to install for Plutonium (T5/T6)?</summary>
-          <p>Export and place the GSC script in the correct Plutonium scripts folder, then load the exported binds .cfg in-game via console.</p>
+          <p>Select your game in <strong>Setup</strong>, find the game folders, and install the game files. Host a match, open the console with the key below Esc, and run the command shown in Setup.</p>
         </details>
         <details class="faq-item">
           <summary>Do I need to be the lobby host in Plutonium?</summary>
@@ -155,11 +155,11 @@
         </details>
         <details class="faq-item">
           <summary>Does it work in fullscreen?</summary>
-          <p>No - fullscreen blocks keypresses. Use Borderless (Windowed Borderless for BO3, or Borderless Gaming for Plutonium).</p>
+          <p>Use windowed or borderless mode. Exclusive fullscreen can interfere with the app's key delivery.</p>
         </details>
         <details class="faq-item">
           <summary>Do I need to go live before launching the bot?</summary>
-          <p>Yes - go live on TikTok first, then click Launch.</p>
+          <p>You can open the tool and test your setup offline. Start your TikTok LIVE before you select <strong>Connect to TikTok</strong>.</p>
         </details>
       </div>
     </div>
@@ -174,11 +174,11 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>Keys aren't working in BO3.</summary>
-          <p>Confirm BO3 is Windowed (Borderless) and focused, run the bot as Administrator, confirm the Sphynx mod is active, and re-run <code>/exec binds.cfg</code> in console.</p>
+          <p>Check the game profile, confirm BO3 is windowed or borderless and the Sphynx mod is active, then run <code>/exec binds.cfg</code> and close the console. Click <strong>Test Max Ammo bind</strong> and return to the game within three seconds.</p>
         </details>
         <details class="faq-item">
           <summary>Nothing happens in Plutonium.</summary>
-          <p>Re-run the exec command in console, confirm you're the host, confirm the GSC file is in the right folder (run <code>map_restart</code> after placing it), and make sure you're using Borderless Gaming.</p>
+          <p>Make sure you are hosting and the game files are installed. Start a fresh match after updating the script, rerun the bind command in the game console, and close the console before testing.</p>
         </details>
         <details class="faq-item">
           <summary>I see !botcmd text on my HUD in Plutonium.</summary>
@@ -186,19 +186,19 @@
         </details>
         <details class="faq-item">
           <summary>The bot won't connect to TikTok.</summary>
-          <p>You must be actively LIVE before launching. Double check your TikTok handle on the Dashboard.</p>
+          <p>Confirm your TikTok LIVE has started and the username on <strong>Live</strong> is correct. Use <strong>Diagnostics → Copy diagnostics</strong> to share details if the problem continues.</p>
         </details>
         <details class="faq-item">
           <summary>There's no TTS voice.</summary>
-          <p>Check the Mute TTS button on the Dashboard, and check volume/voice/TTS toggles in Settings.</p>
+          <p>Open <strong>Settings → TTS and OBS</strong>. Check your voice, volume and mute settings, then select <strong>Test voice</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>I changed a key bind and it's not working.</summary>
-          <p>Save Configuration after changing it in Action Binds, then re-run the exec command in-game again.</p>
+          <p>Click <strong>Save profile</strong> in Actions &amp; Gifts, reinstall the game files from Setup, and rerun the bind command in the game console.</p>
         </details>
         <details class="faq-item">
           <summary>I see a Windows Defender / SmartScreen warning.</summary>
-          <p>This is a false positive - the program simulates keyboard input and reads TikTok LIVE data, which trips antivirus heuristics on otherwise-safe software. Click More Info → Run Anyway, or let the installer add a Defender exclusion for you.</p>
+          <p>The installer is unsigned, so Windows may show a SmartScreen warning. Download from the <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">official GitHub release</a> and compare the ZIP's SHA-256 with the release notes. Keep Microsoft Defender enabled.</p>
         </details>
       </div>
     </div>
@@ -213,7 +213,7 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>How do I turn on the OBS overlay?</summary>
-          <p>Settings tab → OBS Overlay section → tick "Write live stats for OBS." Stats update to text files roughly once a second while it's on.</p>
+          <p>Open <strong>Settings → TTS and OBS</strong> and tick <strong>Write OBS text files</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>How do I actually get the stats into OBS?</summary>
@@ -221,7 +221,7 @@
         </details>
         <details class="faq-item">
           <summary>Where do I find the overlay files?</summary>
-          <p>Settings → OBS Overlay → "Open Overlay Folder" button opens it directly. It lives at <code>%APPDATA%\BO3TikTokBot\overlay\</code>.</p>
+          <p>In <strong>Settings → TTS and OBS</strong>, select <strong>Copy OBS folder path</strong> after enabling text files. Paste that path into the file picker in OBS. If you upgraded from 2.7.0, point your existing OBS sources to this folder.</p>
         </details>
         <details class="faq-item">
           <summary>What stats are available?</summary>
@@ -229,11 +229,11 @@
         </details>
         <details class="faq-item">
           <summary>Can I show what song I'm playing on stream?</summary>
-          <p>Yes - tick "Include Spotify now-playing" underneath the main OBS overlay checkbox (requires the main "Write live stats for OBS" toggle to be on too). It reads the track info straight from the Spotify desktop app's window title - no login, API key, or extra setup needed. Spotify just needs to be open and playing on the same PC.</p>
+          <p>In <strong>Settings → TTS and OBS</strong>, tick <strong>Write OBS text files</strong> and <strong>Include Spotify now playing</strong>. Start playback in the Spotify desktop app on the same PC and point an OBS Text source to <code>spotify_now_playing.txt</code>.</p>
         </details>
         <details class="faq-item">
           <summary>My OBS text source isn't updating.</summary>
-          <p>Confirm "Write live stats for OBS" is ticked in Settings, confirm the Text source in OBS has "Read from file" enabled and is pointed at the correct file in the overlay folder, and confirm the bot is actually running/live (files only update while a session is active).</p>
+          <p>Confirm <strong>Write OBS text files</strong> is on. In OBS, enable <strong>Read from file</strong> for the Text source and use the path from <strong>Copy OBS folder path</strong>.</p>
         </details>
       </div>
     </div>
@@ -267,11 +267,11 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>How do I uninstall?</summary>
-          <p>Settings → Apps → RedruM's Interactive Zombies Tool → Uninstall. You'll be asked whether to keep your settings/stats. GSC and cfg files in your game folders stay unless you delete them manually.</p>
+          <p>Open <strong>Windows Settings → Apps</strong>, select <strong>RedruM's Interactive Zombies Tool</strong>, and choose <strong>Uninstall</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>If I reinstall, do I lose my settings?</summary>
-          <p>Not if you chose to keep them during uninstall - config is preserved and versions carry it forward automatically.</p>
+          <p>Saved settings and stats are kept for a future reinstall. Close the app before running Setup over your existing installation.</p>
         </details>
       </div>
     </div>
@@ -285,12 +285,12 @@
       <a class="footer-link" href="/">🏠 Home</a>
       <a class="footer-link" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">💬 Discord - RedsHUB</a>
       <a class="footer-link" href="https://tiktok.com/@redrum.au" target="_blank" rel="noopener">🎵 TikTok - @redrum.au</a>
-      <a class="footer-link" href="https://www.youtube.com/watch?v=hDc3MxrjlYg" target="_blank" rel="noopener">▶ YouTube Tutorial</a>
+      <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool#game-setup" target="_blank" rel="noopener">Setup guide</a>
       <a class="footer-link" href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool" target="_blank" rel="noopener">⌥ GitHub</a>
       <a class="footer-link" href="https://ko-fi.com/redrumau" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
     </div>
     <div class="footer-bottom">
-      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.5.2</span> · Built by RedruM</span>
+      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.8.0</span> · Built by RedruM</span>
       <span>Free for personal streaming use - not for resale. See <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/blob/main/LICENSE.txt" target="_blank" rel="noopener">LICENSE</a>.</span>
     </div>
   </div>

@@ -32,14 +32,13 @@
   var prevBtn = document.getElementById("carousel-prev");
   var nextBtn = document.getElementById("carousel-next");
   var current = 0;
-  var captions = ["Bot Dashboard", "Keys & Binds", "Settings", "Setup & Diagnostics", "Stats & Achievements"];
 
   function goTo(index) {
     if (!slides.length) return;
     current = (index + slides.length) % slides.length;
     track.style.transform = "translateX(-" + current * 100 + "%)";
     dots.forEach(function (dot, i) { dot.classList.toggle("active", i === current); });
-    if (caption) caption.textContent = captions[current] || "";
+    if (caption) caption.textContent = slides[current].getAttribute("data-alt") || "";
   }
 
   if (prevBtn) prevBtn.addEventListener("click", function () { goTo(current - 1); });
@@ -78,16 +77,11 @@
   var heroImg = document.getElementById("hero-slideshow-img");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  var heroSlides = [
-    { src: "screenshots/dashboard.png", alt: "RedruM's Interactive Zombies Tool dashboard showing live stats, chat feed, and game status" },
-    { src: "screenshots/keys-and-binds.png", alt: "Keys and Binds panel" },
-    { src: "screenshots/settings.png", alt: "Settings tab" },
-    { src: "screenshots/setup-diagnostics.png", alt: "Setup and Diagnostics tab" },
-    { src: "screenshots/stats.png", alt: "Stats and Achievements tab" },
-    { src: "screenshots/setup-wizard.png", alt: "Installer setup wizard" }
-  ];
+  var heroSlides = slides.map(function (slide) {
+    return { src: slide.getAttribute("data-full"), alt: slide.getAttribute("data-alt") };
+  });
 
-  if (heroImg) {
+  if (heroImg && heroSlides.length && !reduceMotion) {
     var heroIndex = 0;
     var heroTimer = null;
 
@@ -141,7 +135,7 @@
 
   // Pull the current version from GitHub's latest release instead of relying
   // on the hardcoded fallback text staying in sync by hand. Fails silently —
-  // if the API is unreachable or rate-limited, the hardcoded "v2.5.1" text
+  // if the API is unreachable or rate-limited, the hardcoded "v2.8.0" text
   // already in the HTML just stays as-is rather than showing an error.
   fetch("https://api.github.com/repos/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest")
     .then(function (res) { return res.ok ? res.json() : null; })
