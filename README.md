@@ -68,6 +68,8 @@ Each game has its own profile. **Game detected** beside the profile selector mea
 
 Already on 2.8.0? Download the refreshed ZIP, close the app, and run Setup again. Your saved settings carry over.
 
+The installer is unsigned, so Windows may show a SmartScreen warning. Download from the official GitHub release and compare the ZIP's SHA-256 with the one listed there. Keep Microsoft Defender enabled. [About SmartScreen](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation)
+
 The guided tour opens on first launch. Replay it from **Help > Start guided tour**.
 
 If you use OBS text sources from 2.7.0, open **Settings > TTS and OBS > Copy OBS folder path** and point those sources to the new folder.
@@ -77,8 +79,8 @@ If you use OBS text sources from 2.7.0, open **Settings > TTS and OBS > Copy OBS
 ![Game Setup in the Glacier theme](docs/screenshots/v2.8.0/setup.png)
 
 1. Select your game. If you customise keys or gifts, save them in **Actions & Gifts**. Open **Setup**, click **Find game folders**, then **Install game files**.
-2. After installing the game files, start a Zombies match. On Plutonium, host the match and open the console with the key below Esc. On BO3, load the Sphynx mod and press tilde (~) to open the console. Run the command and close the console.
-3. Use windowed or borderless display mode.
+2. After installing the game files, start a Zombies match. On Plutonium, host the match and open the console with the key below Esc. On BO3, load [Sphynx Console Commands v1.0.6](https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766) and use the console key, usually the key below Esc (tilde on US keyboards). Run the command and close the console.
+3. Use windowed or borderless display mode. The tool sends keyboard binds. If you play with keyboard and mouse, choose action keys that do not overlap your game controls.
 4. Click **Test Max Ammo bind** with game input enabled and return to the game within three seconds. Look for an ammo refill or Max Ammo message. If it works, tick **I saw Max Ammo in the game** and select **Next: Connect to TikTok**.
 5. On **Live**, enter your TikTok username. Start your stream, then click **Connect to TikTok**. Game input is enabled by default. Live and Demo only send keys when the app verifies the selected game window. Turn game input off to preview events.
 
