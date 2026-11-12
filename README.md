@@ -1,6 +1,6 @@
 # RedruM's Interactive Zombies Tool
 
-**Version** 2.8.0 &nbsp;|&nbsp; **Windows** &nbsp;|&nbsp; **Developer** RedruM &nbsp;|&nbsp; **Free forever**
+**Version** 2.8.1 &nbsp;|&nbsp; **Windows** &nbsp;|&nbsp; **Developer** RedruM &nbsp;|&nbsp; **Free forever**
 
 [Website](https://redrumtools.com/) · [Download](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest) · [Discord](https://discord.gg/VFeZVGtBA7)
 
@@ -62,13 +62,13 @@ Each game has its own profile. **Game detected** beside the profile selector mea
 
 ## 📦 Installation
 
-1. Download the v2.8.0 ZIP from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases).
+1. Download the v2.8.1 ZIP from [Releases](https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases).
 2. Close the game and the tool, including its tray icon. Unzip the download and run the Setup executable.
 3. Open the tool. Compatible v2.7.0 settings, profiles, presets and stats carry over. If the tool offers **Update game files**, accept it with the game closed.
 
-Already on 2.8.0? Download the refreshed ZIP, close the app, and run Setup again. Your saved settings carry over.
+Already on 2.8.0? Close the app and run the 2.8.1 installer once. Your saved settings carry over. For later versions, use **Help → Check for updates** in the app.
 
-The installer is unsigned, so Windows may show a SmartScreen warning. Download from the official GitHub release and compare the ZIP's SHA-256 with the one listed there. Keep Microsoft Defender enabled. [About SmartScreen](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation)
+The installer is unsigned, so Windows may show a SmartScreen warning. Download from the official GitHub release and compare your download's SHA-256 with the one listed there. Keep Microsoft Defender enabled. [About SmartScreen](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation)
 
 The guided tour opens on first launch. Replay it from **Help > Start guided tour**.
 
