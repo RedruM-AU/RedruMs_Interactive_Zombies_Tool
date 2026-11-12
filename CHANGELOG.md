@@ -4,6 +4,14 @@ Community patch notes for RedruM's Interactive Zombies Tool.
 
 ## [2.8.0]
 
+### Interface refresh
+
+- Setup shows when to start a match, how to load binds, and what to look for in the Max Ammo test. Confirm the result in-game to mark Setup complete, then continue to TikTok.
+- Live uses clearer game file statuses. The RedruM theme uses teal for Connect, and unchecked boxes and Solarized Light selections are easier to see.
+- Setup highlights the next step and moves export and bind checks under Advanced tools.
+- Live highlights Connect to TikTok and shows game and connection readiness.
+- Simplified gift details and appearance settings, refreshed icons and controls, and added achievement cards with progress.
+
 ### Desktop and dashboard
 
 - Rebuilt the Windows desktop app in Qt with refreshed Live, Setup, Actions & Gifts, Settings, Diagnostics, Stats and Help pages.
@@ -210,4 +218,4 @@ Complete keybind system redesign with auto-write on save. Update checker, settin
 Major platform expansion — added T6 (BO2 Plutonium) and T5 (BO1 Plutonium) as full game profiles. Introduced the Action Bind Architecture: one Action Binds panel driving the spin wheel, gift matrix, and cfg export. Installer path collection, keybind drift detector.
 
 ## [1.0.1] — 2026-05-28
-First public release. Black Ops 3 only. TikTok LIVE integration, gift routing, `!spin` command, weighted chaos wheel, T
+First public release. Black Ops 3 only. TikTok LIVE integration, gift routing, `!spin` command, weighted chaos wheel, TTS, gifter chat reading, like-based rewards, auto-reconnect, cooldown management, `binds.cfg` exporter.
