@@ -2,9 +2,14 @@
 
 Community patch notes for RedruM's Interactive Zombies Tool.
 
-## [2.8.0] - 2026-11-12
+## [2.8.1]
 
-Refreshed 13 November 2026 with the updated installer, Setup flow and Live controls.
+- Added in-app downloads for future stable releases. The app checks the installer before opening the Setup wizard.
+- Setup can be opened from the updater after the stream, demo, or test ends.
+- Setup now directs you to the bind command for your selected game. For all-users installs, game folders are configured inside the app under your Windows account.
+- Removed the installer’s Windows Defender exclusion option.
+
+## [2.8.0]
 
 ### Interface refresh
 
