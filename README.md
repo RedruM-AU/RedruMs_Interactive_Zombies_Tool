@@ -38,6 +38,7 @@ Each game has its own profile. **Game detected** beside the profile selector mea
 ### Actions & Gifts
 
 - Edit **Keybinds**, **Gift mappings** and the **Spin wheel** in one place.
+- Click a **Key** cell to edit it or a **Game action** cell to open the gift action list.
 - Capture keys, check conflicts, search the gift catalog and see the wheel's base odds. Use **Gift details** to edit the selected gift's trigger and TikTok ID.
 - Add custom console commands for BO3. BO1 and BO2 profiles use their built-in actions.
 
@@ -54,7 +55,12 @@ Each game has its own profile. **Game detected** beside the profile selector mea
 ### Stream Extras
 
 - Review session history, personal bests and 20 achievement cards in **Stats**, with unlock dates and progress for tracked goals.
-- BO1 and BO2 include a configurable zombie counter and a small website watermark. Hosts can enter `say !redrumhud` to adjust the HUD for the current match.
+- BO1 and BO2 hosts can hold **Aim** and press **Melee** to open the in-game menu. A reminder appears after the loading banner on your first spawn. Tap **Aim** for next, **Jump** for previous, **Use/Reload** to select, and **Melee** to go back or close. The console command `say !redrumhud` also opens it.
+- **Interactive Settings** groups the zombie counter, watermark position, action messages and wheel animation. Open **Menu Appearance** to pick Amber, Crimson, Glacier or Nightshade and move the menu left, centre or right for the current match.
+- Save defaults under **Settings > Appearance > Configure in-game HUD**. With the game closed, reinstall its files from **Setup** and start a fresh match to apply them.
+- **Player & Movement** has a God mode toggle. **Weapons & Ammo** has Infinite ammo and Refill current weapon.
+- **Map & Doors** covers power switches and standard doors. **Points** includes larger amounts and a team reward. Round skips live under **Rounds & Challenges**.
+- **Zombies & Bosses** includes Tank Zombie on both games. BO1 adds an Elemental Boss with a nameplate, a health bar and an area attack warning. BO2 hosts can try **Test a gifter zombie**, or map **Spawn Gifter Zombie** to a TikTok gift to use the sender's name. BO2 also adds Carpenter and map-dependent Zombie Blood under **Power-ups**.
 
 ![Achievements in the Solarized Light theme](docs/screenshots/v2.8.0/achievements.png)
 
@@ -66,11 +72,11 @@ Each game has its own profile. **Game detected** beside the profile selector mea
 2. Close the game and the tool, including its tray icon. Unzip the download and run the Setup executable.
 3. Open the tool. Compatible v2.7.0 settings, profiles, presets and stats carry over. If the tool offers **Update game files**, accept it with the game closed.
 
-Already on 2.8.0? Close the app and run the 2.8.1 installer once. Your saved settings carry over. For later versions, use **Help → Check for updates** in the app.
+Already on 2.8.0? Close the app and run the 2.8.1 installer once. Your saved settings carry over. The app checks for later versions at startup. You can also use **Help → Check for updates**.
 
 The installer is unsigned, so Windows may show a SmartScreen warning. Download from the official GitHub release and compare your download's SHA-256 with the one listed there. Keep Microsoft Defender enabled. [About SmartScreen](https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation)
 
-The guided tour opens on first launch. Replay it from **Help > Start guided tour**.
+The app shows a free-software notice at startup with a link to the official website. Tick **Don't show this again** to dismiss future notices. The guided tour opens on first launch. Replay it from **Help > Start guided tour**.
 
 If you use OBS text sources from 2.7.0, open **Settings > TTS and OBS > Copy OBS folder path** and point those sources to the new folder.
 

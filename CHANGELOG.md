@@ -4,10 +4,26 @@ Community patch notes for RedruM's Interactive Zombies Tool.
 
 ## [2.8.1]
 
-- Added in-app downloads for future stable releases. The app checks the installer before opening the Setup wizard.
+- Added startup notifications and in-app downloads for future stable releases. The app checks the installer before opening the Setup wizard.
 - Setup can be opened from the updater after the stream, demo, or test ends.
 - Setup now directs you to the bind command for your selected game. For all-users installs, game folders are configured inside the app under your Windows account.
 - Removed the installer’s Windows Defender exclusion option.
+- Restored the startup notice that the tool is free, with a link to the official website and an option to dismiss future notices.
+- Added checks for invalid settings and keybinds, recovery copies before replacing stats, and clearer game folder setup. Close the selected game before installing its files.
+- BO1 and BO2 can hide the labelled zombie counter and move the website watermark.
+- BO1 and BO2 hosts can test effects from a redesigned in-game menu organised by action type. Hold Aim and press Melee to open it.
+- Interactive Settings groups the HUD, action messages and wheel animation. Menu Appearance adds four themes and left, centre and right placement. Save your defaults under Settings > Appearance.
+- Aligned the zombie counter with the watermark when both are centred. Added Tank Zombie and Refill Current Weapon as optional binds for both games.
+- BO1 adds an Elemental Boss with a health bar and a warning before its area attack.
+- BO2's Spawn Zombies action tries to spawn five zombies immediately and queues any that need to wait. Added Carpenter and map-dependent Zombie Blood drops, and fixed the random perk bottle drop.
+- BO1 and BO2 add optional binds for standard power switches, nearby or all standard doors and debris, 5,000 and 10,000 point changes, and 1,000 points for each living player.
+- BO2 adds the experimental Spawn Gifter Zombie action. Map it to a TikTok gift to put the sender's username above a spawned zombie.
+- Grouped Keybinds by category across all game profiles.
+- Keybinds and Gift mappings now open editable cells and dropdowns with one click.
+- Added host-only God mode and Infinite ammo toggles to the BO1 and BO2 in-game menus.
+- Tank Zombie starts with 20,000 health at any round. BO2 displays a nameplate after spawning.
+- BO1 displays an orange nameplate for Tank Zombie and a blue one for Elemental Boss.
+- BO1 and BO2 hosts see the menu shortcut after the loading banner.
 
 ## [2.8.0]
 
