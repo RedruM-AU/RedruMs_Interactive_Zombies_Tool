@@ -148,18 +148,4 @@
     });
   });
 
-  // Pull the current version from GitHub's latest release instead of relying
-  // on the hardcoded fallback text staying in sync by hand. Fails silently —
-  // if the API is unreachable or rate-limited, the hardcoded "v2.8.1" text
-  // already in the HTML just stays as-is rather than showing an error.
-  fetch("https://api.github.com/repos/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest")
-    .then(function (res) { return res.ok ? res.json() : null; })
-    .then(function (data) {
-      var tag = data && data.tag_name;
-      if (!tag) return;
-      document.querySelectorAll("#hero-version, #footer-version").forEach(function (el) {
-        el.textContent = tag;
-      });
-    })
-    .catch(function () { /* keep the static fallback text */ });
 })();

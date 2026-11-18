@@ -351,7 +351,7 @@ section { padding: 64px 0; border-bottom: 1px solid var(--border-soft); }
      stretch to fill the full row, which makes centering invisible. Wraps to
      2 then 1 column on its own as space runs out, no manual breakpoints
      needed. */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 340px));
   justify-content: center;
   gap: 16px;
 }
@@ -815,3 +815,8 @@ footer { padding: 48px 0 40px; }
   .topbar .wrap { padding: 0 16px; }
   .nav-discord { display: none; }
 }
+
+.release-status { color: var(--text-dim); font-size: 14px; }
+main > .release-status { margin-top: 16px; }
+
+.hero-meta.release-status { font-size: 13px; }

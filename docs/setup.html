@@ -10,7 +10,7 @@
 <meta property="og:url" content="https://redrumtools.com/setup">
 <meta property="og:title" content="Game Setup - RedruM's Interactive Zombies Tool">
 <meta property="og:description" content="Install the game files, load your binds, and test Max Ammo before connecting to TikTok.">
-<meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.0/setup.png">
+<meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.2/setup.png">
 <meta property="og:image:width" content="1440">
 <meta property="og:image:height" content="920">
 <meta property="og:image:alt" content="Game Setup in the RedruM theme">
@@ -67,6 +67,7 @@
 </header>
 
 <main>
+  <p class="release-status wrap"><strong>v2.8.2 preview</strong> · Downloads pending. The Download button opens the current public release.</p>
   <section class="faq-hero">
     <div class="wrap">
       <h1>Set up your Zombies game</h1>
@@ -84,10 +85,14 @@
       <article class="game-card setup-panel" id="install">
         <h2>Install the game files</h2>
         <ol>
-          <li>Download Windows Setup from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>, then run the installer. If you downloaded the ZIP, extract it first. Open the app under your normal Windows account.</li>
+          <li>Download the current Windows Setup from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>, then run the installer. If you downloaded the ZIP, extract it first. Open the app under your normal Windows account.</li>
           <li>Open the tool, select your game profile, and open <strong>Setup</strong>.</li>
-          <li>Select <strong>Find game folders</strong>, check the paths, and select <strong>Install game files</strong>. If the folders aren’t found, select them with <strong>Browse</strong>.</li>
+          <li>If you edit a key, open <strong>Actions &amp; Gifts → Keybinds</strong>, use <strong>Search actions</strong> to find it, and select <strong>Save profile</strong>. Avoid F10, F12 and Home on Plutonium.</li>
+          <li>Select <strong>Find game folders</strong>, check the paths, and select <strong>Install game files</strong>. Use <strong>Browse</strong> if the folders are missing. If Setup lists a keybind conflict, change the listed keys in <strong>Actions &amp; Gifts → Keybinds</strong> and save the profile before installing.</li>
         </ol>
+        <p>The <strong>Game files installed</strong> dialog lists the files that were written. Select <strong>Copy command</strong> to copy the console command for your game. If existing files were backed up, <strong>Open backup folder</strong> opens that install’s backup.</p>
+        <p>You can install game files while the selected game is open if the app is idle. End the stream, demo, or test first. The startup updater skips games that are open.</p>
+        <p><a href="screenshots/website-v2.8.2/install-result.png"><img src="screenshots/website-v2.8.2/install-result.png" alt="BO2 game files installed dialog with the file list, restart instructions, and copy and backup buttons" width="490" height="301" style="max-width:100%;height:auto" loading="lazy"></a></p>
       </article>
 
       <article class="game-card setup-panel" id="bo3">
@@ -100,11 +105,21 @@
         </div>
         <p class="copy-status" role="status"></p>
         <a href="#test">Test Max Ammo</a>
+        <h3>Add a custom BO3 action</h3>
+        <ol>
+          <li>Open <strong>Actions &amp; Gifts → Keybinds → Add BO3 action</strong>. Enter a name, choose an unused key, and paste a command such as <code>/namedzombie 5</code>.</li>
+          <li>Check the live <strong>Bind preview</strong>. The generated bind uses <code>namedzombie 5</code>.</li>
+          <li>Select <strong>Save profile</strong>, then <strong>Setup → Install game files</strong>. In a Zombies match with Sphynx loaded, run <code>/exec binds.cfg</code> again.</li>
+          <li>Try the physical key first. To use it on stream, select the action in <strong>Gift mappings</strong>, save, and use <strong>Test gift</strong>.</li>
+        </ol>
+        <p><a href="https://steamcommunity.com/workshop/filedetails/discussion/2860310766/806846621645134901/" target="_blank" rel="noopener">Sphynx command list on Steam Workshop</a></p>
+        <p>Use <strong>Edit duration</strong> or <strong>Edit spawn count</strong> when they appear for a supported command. <a href="screenshots/website-v2.8.2/bo3-keybinds.png">See BO3 Keybinds</a>.</p>
+        <p>Use <strong>Settings → Gameplay → BO3 effects and repeats</strong> for app-managed timers. Changes there apply to the next session or test.</p>
       </article>
 
       <article class="game-card setup-panel" id="bo2">
         <h2>Black Ops 2 Zombies <span class="platform">Plutonium T6</span></h2>
-        <p>In Setup, select <a href="#install"><strong>Install game files</strong></a> for BO2, then host a fresh Zombies match in windowed or borderless mode.</p>
+        <p>In Setup, select <a href="#install"><strong>Install game files</strong></a> for BO2. If the dialog says the Zombies script changed, restart the map or host a new match before running the command below. For bind-only changes, rerun the command in the same match. Use windowed or borderless mode.</p>
         <p>Press the key below Esc to open the console. Run this command and close the console.</p>
         <div class="setup-command">
           <code id="command-bo2">exec bot_binds.cfg</code>
@@ -116,7 +131,7 @@
 
       <article class="game-card setup-panel" id="bo1">
         <h2>Black Ops 1 Zombies <span class="platform">Plutonium T5</span></h2>
-        <p>In Setup, select <a href="#install"><strong>Install game files</strong></a> for BO1, then host a fresh Zombies match in windowed or borderless mode.</p>
+        <p>In Setup, select <a href="#install"><strong>Install game files</strong></a> for BO1. If the dialog says the Zombies script changed, restart the map or host a new match before running the command below. For bind-only changes, rerun the command in the same match. Use windowed or borderless mode.</p>
         <p>Press the key below Esc to open the console. Run this command and close the console.</p>
         <div class="setup-command">
           <code id="command-bo1">exec pluto_t5_binds.cfg</code>
@@ -141,7 +156,7 @@
         <h2>BO1 and BO2 in-game menu</h2>
         <p>While hosting a Zombies match, hold <strong>Aim</strong> and press <strong>Melee</strong> to open the menu. Tap <strong>Aim</strong> for next, <strong>Jump</strong> for previous, <strong>Use/Reload</strong> to select and <strong>Melee</strong> to go back or close.</p>
         <p><strong>In-game</strong> — Open <strong>Interactive Settings &gt; Menu Appearance</strong> to change the colour theme or move the panel left, centre or right for the current match.</p>
-        <p><strong>In the app</strong> — Save defaults for future matches under <strong>Settings &gt; Appearance &gt; Configure in-game HUD</strong>. With the game closed, return to <strong>Setup</strong> and select <strong>Install game files</strong> before starting a fresh match.</p>
+        <p><strong>In the app</strong> — Save defaults for future matches under <strong>Settings &gt; Appearance &gt; Configure in-game HUD</strong>. Return to <strong>Setup</strong> and select <strong>Install game files</strong>. Restart the map or start a new match before reloading your binds.</p>
       </article>
     </div>
   </section>
@@ -156,7 +171,7 @@
       <a class="footer-link" href="https://discord.gg/VFeZVGtBA7" target="_blank" rel="noopener">Discord</a>
     </div>
     <div class="footer-bottom">
-      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.8.1</span> · Built by RedruM</span>
+      <span>RedruM's Interactive Zombies Tool v2.8.2 · Built by RedruM</span>
     </div>
   </div>
 </footer>

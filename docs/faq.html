@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://redrumtools.com/faq">
 <meta property="og:title" content="FAQ - RedruM's Interactive Zombies Tool">
 <meta property="og:description" content="Frequently asked questions for RedruM's Interactive Zombies Tool - setup, troubleshooting, OBS overlay, privacy, and uninstalling.">
-<meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.0/dashboard.png">
+<meta property="og:image" content="https://redrumtools.com/screenshots/website-v2.8.2/dashboard.png">
 <meta property="og:image:width" content="1440">
 <meta property="og:image:height" content="920">
 <meta property="og:image:alt" content="RedruM's Interactive Zombies Tool dashboard">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="FAQ - RedruM's Interactive Zombies Tool">
 <meta name="twitter:description" content="Frequently asked questions for RedruM's Interactive Zombies Tool - setup, troubleshooting, OBS overlay, privacy, and uninstalling.">
-<meta name="twitter:image" content="https://redrumtools.com/screenshots/website-v2.8.0/dashboard.png">
+<meta name="twitter:image" content="https://redrumtools.com/screenshots/website-v2.8.2/dashboard.png">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
@@ -51,6 +51,7 @@
 </header>
 
 <main>
+  <p class="release-status wrap"><strong>v2.8.2 preview</strong> · Downloads pending. The Download button opens the current public release.</p>
 
   <section class="faq-hero" style="border-bottom:none;">
     <div class="wrap">
@@ -89,7 +90,7 @@
         </details>
         <details class="faq-item">
           <summary>Is this the official download?</summary>
-          <p>Download the Windows ZIP from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>. The official site and community links point to that download.</p>
+        <p>Download the current Windows Setup or ZIP from <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>. If you choose the ZIP, extract it before running Setup.</p>
         </details>
         <details class="faq-item">
           <summary>Do I need to pay to unlock features?</summary>
@@ -112,11 +113,31 @@
         </details>
         <details class="faq-item">
           <summary>What do gifts do?</summary>
-          <p>Mapped gifts trigger the game action you assign under <strong>Actions &amp; Gifts → Gift mappings</strong>.</p>
+          <p>Each newly reported gift queues one mapped action by default, including gifts reported during a streak. Map gifts under <strong>Actions &amp; Gifts → Gift mappings</strong>. Repeat limits and BO1/BO2 batching are optional in <strong>Settings → Gameplay</strong>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do Good Wheel and Bad Wheel work?</summary>
+          <p>In <strong>Gift mappings</strong>, choose Good Wheel for a reward roll or Bad Wheel for a challenge roll. Each wheel has its own enabled outcomes and weights. Edit and test them in the matching tab under <strong>Actions &amp; Gifts</strong>. Outcomes need a keybind to be drawn.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where do I change sprinter speed or spawn counts?</summary>
+          <p>On BO1 and BO2, open <strong>Settings → Zombies actions</strong>. Save settings, install game files for each game you play, then restart the map and reload binds using the <a href="/setup">setup guide</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Will an upgrade replace my saved setup?</summary>
+          <p>Your saved settings, keybinds (including blank keys), gift mappings, wheels, presets, and stats carry over. To apply new starter keys, use <strong>Keybinds → Reset defaults → Reset current tab</strong>, then <strong>Save profile</strong>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why is an older gift action unavailable?</summary>
+          <p>If a saved gift points to an unavailable action, <strong>Actions &amp; Gifts → Gift mappings</strong> shows <strong>Review unavailable gifts</strong>. The review offers bound actions and flags the current starter mapping when available. Choose replacements, select <strong>Apply replacements</strong>, then <strong>Save profile</strong>.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can RedruM assign keys to my mapped gifts?</summary>
+          <p>Open <strong>Actions &amp; Gifts → Gift mappings → Manage gift binds</strong>. Review suggested keys and any unused keys you choose to clear. Apply the changes, save the profile, install game files, and reload the binds in-game. Proposals use the saved controls for the selected game.</p>
         </details>
         <details class="faq-item">
           <summary>What does !spin do?</summary>
-          <p>It rolls a weighted effect from your configured wheel. You can adjust the normal and gifter cooldowns in <strong>Settings → Gameplay</strong>.</p>
+          <p>It rolls a free weighted effect from <strong>Chat &amp; bonus wheel</strong>. Bonus spins also use that wheel. Good and Bad gift wheels each have their own outcomes. You can adjust the normal and gifter cooldowns in <strong>Settings → Gameplay</strong>.</p>
         </details>
         <details class="faq-item">
           <summary>Do gifters get anything extra?</summary>
@@ -136,11 +157,11 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>What do I need to install for Black Ops 3?</summary>
-          <p>Load <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766" target="_blank" rel="noopener">Sphynx Console Commands v1.0.6</a> and use Windowed (Borderless) mode. The app sends keyboard binds. If you play with keyboard and mouse, choose action keys that do not overlap your game controls.</p>
+          <p>Load <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2860310766" target="_blank" rel="noopener">Sphynx Console Commands v1.0.6</a> and use Windowed (Borderless) mode. The app sends keyboard binds. If you play with keyboard and mouse, choose action keys that do not overlap your game controls. The <a href="/setup#bo3">BO3 setup guide</a> shows how to add and test a custom command.</p>
         </details>
         <details class="faq-item">
           <summary>What do I need to install for Plutonium (T5/T6)?</summary>
-          <p>Select your game in <strong>Setup</strong>, find the game folders, and install the game files. Host a match, open the console with the key below Esc, and run the command shown in Setup.</p>
+          <p>Select your game in <strong>Setup</strong>, find the game folders, and install the game files. Host a match and use <strong>Copy command</strong> in the install dialog. After a script change, restart the map or start a new match first. For bind-only changes, run the command again in the same match.</p>
         </details>
         <details class="faq-item">
           <summary>Do I need to be the lobby host in Plutonium?</summary>
@@ -287,7 +308,7 @@
       <a class="footer-link" href="https://ko-fi.com/redrumau" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
     </div>
     <div class="footer-bottom">
-      <span>RedruM's Interactive Zombies Tool <span id="footer-version">v2.8.1</span> · Built by RedruM</span>
+      <span>RedruM's Interactive Zombies Tool v2.8.2 · Built by RedruM</span>
       <span>Free for personal streaming use - not for resale. See <a href="https://github.com/RedruM-AU/RedruMs_Interactive_Zombies_Tool/blob/main/LICENSE.txt" target="_blank" rel="noopener">LICENSE</a>.</span>
     </div>
   </div>
